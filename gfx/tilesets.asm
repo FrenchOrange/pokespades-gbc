@@ -167,14 +167,14 @@ INCBIN "data/tilesets/johto_modern_metatiles.bin"
 TilesetJohtoModernColl::
 INCLUDE "data/tilesets/johto_modern_collision.asm"
 
-TilesetMagnoliaHouseGFX::
-INCBIN "gfx/tilesets/magnolia_house.2bpp.lz"
+TilesetTemp2GFX::
+INCBIN "gfx/tilesets/temp2.2bpp.lz"
 
-TilesetMagnoliaHouseMeta::
-INCBIN "data/tilesets/magnolia_house_metatiles.bin"
+TilesetTemp2Meta::
+INCBIN "data/tilesets/temp2_metatiles.bin"
 
-TilesetMagnoliaHouseColl::
-INCLUDE "data/tilesets/magnolia_house_collision.asm"
+TilesetTemp2Coll::
+INCLUDE "data/tilesets/temp2_collision.asm"
 
 
 SECTION "Tileset Data 6", ROMX
@@ -188,14 +188,14 @@ INCBIN "data/tilesets/champions_room_metatiles.bin"
 TilesetChampionsRoomColl::
 INCLUDE "data/tilesets/champions_room_collision.asm"
 
-TilesetHouseGFX::
-INCBIN "gfx/tilesets/house.2bpp.lz"
+TilesetTemp1GFX::
+INCBIN "gfx/tilesets/temp1.2bpp.lz"
 
-TilesetHouseMeta::
-INCBIN "data/tilesets/house_metatiles.bin"
+TilesetTemp1Meta::
+INCBIN "data/tilesets/temp1_metatiles.bin"
 
-TilesetHouseColl::
-INCLUDE "data/tilesets/house_collision.asm"
+TilesetTemp1Coll::
+INCLUDE "data/tilesets/temp1_collision.asm"
 
 TilesetLighthouseGFX::
 INCBIN "gfx/tilesets/lighthouse.2bpp.lz"
@@ -260,8 +260,8 @@ INCBIN "data/tilesets/johto_modern_attributes.bin"
 TilesetKantoAttr::
 INCBIN "data/tilesets/kanto_attributes.bin"
 
-TilesetHouseAttr::
-INCBIN "data/tilesets/house_attributes.bin"
+TilesetTemp1Attr::
+INCBIN "data/tilesets/temp1_attributes.bin"
 
 TilesetPlayersHouseAttr::
 INCBIN "data/tilesets/players_house_attributes.bin"
@@ -287,8 +287,8 @@ INCBIN "data/tilesets/game_corner_attributes.bin"
 TilesetEliteFourRoomAttr::
 INCBIN "data/tilesets/elite_four_room_attributes.bin"
 
-TilesetMagnoliaHouseAttr::
-INCBIN "data/tilesets/magnolia_house_attributes.bin"
+TilesetTemp2Attr::
+INCBIN "data/tilesets/temp2_attributes.bin"
 
 TilesetTrainStationAttr::
 INCBIN "data/tilesets/train_station_attributes.bin"

@@ -137,14 +137,14 @@ TilesetIcePathAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetEliteFourRoomAnim:
-TilesetHouseAnim:
+TilesetTemp1Anim:
 TilesetPlayersHouseAnim:
 TilesetPokecenterAnim:
 TilesetGateAnim:
 TilesetSchoolAnim:
 TilesetMartAnim:
 TilesetGameCornerAnim:
-TilesetMagnoliaHouseAnim:
+TilesetTemp2Anim:
 TilesetTrainStationAnim:
 TilesetChampionsRoomAnim:
 TilesetLighthouseAnim:

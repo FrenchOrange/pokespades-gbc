@@ -14,7 +14,7 @@ Tilesets::
 	tileset TilesetJohto
 	tileset TilesetJohtoModern
 	tileset TilesetKanto
-	tileset TilesetHouse
+	tileset TilesetTemp1
 	tileset TilesetPlayersHouse
 	tileset TilesetPokecenter
 	tileset TilesetGate
@@ -22,7 +22,7 @@ Tilesets::
 	tileset TilesetMart
 	tileset TilesetGameCorner
 	tileset TilesetEliteFourRoom
-	tileset TilesetMagnoliaHouse
+	tileset TilesetTemp2
 	tileset TilesetTrainStation
 	tileset TilesetChampionsRoom
 	tileset TilesetLighthouse

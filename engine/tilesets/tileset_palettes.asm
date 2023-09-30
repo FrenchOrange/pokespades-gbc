@@ -6,8 +6,6 @@ LoadSpecialMapPalette:
 	jr z, .friendly_shop
 	cp TILESET_PLAYERS_HOUSE
 	jr z, .players_house
-	cp TILESET_MAGNOLIA_HOUSE
-	jr z, .players_house
 	cp TILESET_SCHOOL
 	jr z, .school
 	cp TILESET_BATTLE_TOWER_INSIDE

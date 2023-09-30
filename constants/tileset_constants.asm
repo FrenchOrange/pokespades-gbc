@@ -3,7 +3,7 @@
 	const TILESET_JOHTO                ; 01
 	const TILESET_JOHTO_MODERN         ; 02
 	const TILESET_KANTO                ; 03
-	const TILESET_HOUSE                ; 04
+	const TILESET_TEMP1                ; 04
 	const TILESET_PLAYERS_HOUSE        ; 05
 	const TILESET_POKECENTER           ; 06
 	const TILESET_GATE                 ; 07
@@ -11,7 +11,7 @@
 	const TILESET_MART                 ; 09
 	const TILESET_GAME_CORNER          ; 10
 	const TILESET_ELITE_FOUR_ROOM      ; 11
-	const TILESET_MAGNOLIA_HOUSE       ; 12
+	const TILESET_TEMP2                ; 12
 	const TILESET_TRAIN_STATION        ; 13
 	const TILESET_CHAMPIONS_ROOM       ; 14
 	const TILESET_LIGHTHOUSE           ; 15
