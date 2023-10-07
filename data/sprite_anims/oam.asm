@@ -72,8 +72,8 @@ SpriteAnimOAMData:
 	spriteanimoam $00, .OAMData_PartyMonWithMail2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_MAIL_2
 	spriteanimoam $00, .OAMData_PartyMonWithItem1        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_1
 	spriteanimoam $00, .OAMData_PartyMonWithItem2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_2
-	spriteanimoam $00, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PINK_1
-	spriteanimoam $04, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PINK_2
+	spriteanimoam $00, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_1
+	spriteanimoam $04, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_2
 	spriteanimoam $00, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_43
 	spriteanimoam $30, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_44
 	spriteanimoam $03, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_45

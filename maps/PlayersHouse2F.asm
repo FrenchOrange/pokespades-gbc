@@ -1,4 +1,5 @@
 	object_const_def
+	const PLAYERSHOUSE2F_GAMECUBE
 	const PLAYERSHOUSE2F_CONSOLE
 	const PLAYERSHOUSE2F_DOLL_1
 	const PLAYERSHOUSE2F_DOLL_2
@@ -52,6 +53,9 @@ PlayersHousePosterScript:
 PlayersHouseBonsaiTreeScript:
 	jumptext BonsaiTreeText
 
+PlayersHouseGameCubeScript:
+	jumptext GameCubeText
+
 PlayersHouseBedScript:
 	jumptext PlayersHouseBedText
 
@@ -69,6 +73,16 @@ BonsaiTreeText:
 	text "A bonsai plant!"
 	para "Make sure to water"
 	line "it regularly."
+	done
+
+GameCubeText:
+	text "It's a NINTENDO"
+	line "GAMECUBE."
+
+	para "A GAME BOY ADVANCE"
+	line "is connected to"
+	cont "serve as the"
+	cont "controller."
 	done
 
 PlayersHouseBedText:
@@ -102,9 +116,6 @@ DebugSign:
 	setevent EVENT_DECO_CARPET_2
 	setevent EVENT_DECO_CARPET_3
 	setevent EVENT_DECO_CARPET_4
-	setevent EVENT_DECO_FAMICOM
-	setevent EVENT_DECO_SNES
-	setevent EVENT_DECO_N64
 	giveitem MASTER_BALL, 99
 	giveitem RARE_CANDY, 99
 	giveitem MAX_REPEL, 99
@@ -145,7 +156,8 @@ PlayersHouse2F_MapEvents:
 	bg_event  7,  0, BGEVENT_READ, DebugSign
 
 	def_object_events
-	object_event  4,  1, SPRITE_CONSOLE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseGameConsoleScript, EVENT_PLAYERS_HOUSE_2F_CONSOLE
+	object_event  4,  1, SPRITE_GAMECUBE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PlayersHouseGameCubeScript, -1
+	object_event  5,  2, SPRITE_CONSOLE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseGameConsoleScript, EVENT_PLAYERS_HOUSE_2F_CONSOLE
 	object_event  1,  6, SPRITE_DOLL_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll1Script, EVENT_PLAYERS_HOUSE_2F_DOLL_1
 	object_event  2,  6, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
 	object_event  5,  4, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseBigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL

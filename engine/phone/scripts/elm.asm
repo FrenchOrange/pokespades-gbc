@@ -10,8 +10,6 @@ ElmPhoneCalleeScript:
 .next
 	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	iftrue .eggunhatched
-	checkevent EVENT_ELMS_AIDE_IN_LAB
-	iftrue .assistant
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	iftrue .checkingegg
 	checkevent EVENT_ELM_CALLED_ABOUT_STOLEN_POKEMON
@@ -81,8 +79,6 @@ ElmPhoneCallerScript:
 .assistant
 	farwritetext ElmPhoneEggAssistantText
 	specialphonecall SPECIALCALL_NONE
-	clearevent EVENT_ELMS_AIDE_IN_VIOLET_POKEMON_CENTER
-	setevent EVENT_ELMS_AIDE_IN_LAB
 	end
 
 .rocket

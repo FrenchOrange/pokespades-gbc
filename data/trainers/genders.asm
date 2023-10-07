@@ -36,7 +36,7 @@ BTTrainerClassGenders:
 	db MALE   ; GRUNTM
 	db MALE   ; GENTLEMAN
 	db FEMALE ; SKIER
-	db FEMALE ; TEACHER
+	db FEMALE ; LADY
 	db FEMALE ; SABRINA
 	db MALE   ; BUG_CATCHER
 	db MALE   ; FISHER
@@ -69,4 +69,5 @@ BTTrainerClassGenders:
 	db MALE   ; BLUE
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
-	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN
+	db MALE   ; MYSTICALMAN
+	assert_table_length NUM_TRAINER_CLASSES

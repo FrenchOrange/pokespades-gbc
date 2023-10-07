@@ -1,6 +1,4 @@
 InitDecorations:
-	ld a, DECO_GAMECUBE
-	ld [wDecoConsole], a
 	ret
 
 _PlayerDecorationMenu:
@@ -277,7 +275,7 @@ FindOwnedConsoles:
 	db DECO_FAMICOM ; 15
 	db DECO_SNES ; 16
 	db DECO_N64 ; 17
-	db DECO_GAMECUBE ; 18
+	db DECO_VIRTUAL_BOY ; 18
 	db -1
 
 DecoOrnamentMenu:
@@ -301,7 +299,7 @@ FindOwnedOrnaments:
 	db DECO_SQUIRTLE_DOLL ; 24
 	db DECO_POLIWAG_DOLL ; 25
 	db DECO_DIGLETT_DOLL ; 26
-	db DECO_STARMIE_DOLL ; 27
+	db DECO_STARYU_DOLL ; 27
 	db DECO_MAGIKARP_DOLL ; 28
 	db DECO_ODDISH_DOLL ; 29
 	db DECO_GENGAR_DOLL ; 2a
@@ -1045,29 +1043,44 @@ DecorationDesc_NullPoster:
 
 DecorationDesc_LeftOrnament:
 	ld a, [wDecoLeftOrnament]
-	jr DecorationDesc_OrnamentOrConsole
+	jr DecorationDesc_Ornament
 
 DecorationDesc_RightOrnament:
 	ld a, [wDecoRightOrnament]
-	jr DecorationDesc_OrnamentOrConsole
+	jr DecorationDesc_Ornament
 
 DecorationDesc_Console:
 	ld a, [wDecoConsole]
-	jr DecorationDesc_OrnamentOrConsole
+	jr DecorationDesc_GameConsole
 
-DecorationDesc_OrnamentOrConsole:
+DecorationDesc_Ornament:
 	ld c, a
 	ld de, wStringBuffer3
 	call GetDecorationName_c_de
-	ld b, BANK(.OrnamentConsoleScript)
-	ld de, .OrnamentConsoleScript
+	ld b, BANK(.OrnamentScript)
+	ld de, .OrnamentScript
 	ret
 
-.OrnamentConsoleScript:
+.OrnamentScript:
 	jumptext .LookAdorableDecoText
 
 .LookAdorableDecoText:
 	text_far _LookAdorableDecoText
+	text_end
+
+DecorationDesc_GameConsole:
+	ld c, a
+	ld de, wStringBuffer3
+	call GetDecorationName_c_de
+	ld b, BANK(.ConsoleScript)
+	ld de, .ConsoleScript
+	ret
+
+.ConsoleScript:
+	jumptext .LookBrandNewDecoText
+
+.LookBrandNewDecoText:
+	text_far _LookBrandNewDecoText
 	text_end
 
 DecorationDesc_GiantOrnament:

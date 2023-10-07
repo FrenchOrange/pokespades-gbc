@@ -1,6 +1,6 @@
 	object_const_def
 	const APRICOTCROPSPEECHHOUSE_SUPER_NERD
-	const APRICOTCROPSPEECHHOUSE_LASS
+	const APRICOTCROPSPEECHHOUSE_WOMAN
 
 ApricotCropSpeechHouse_MapScripts:
 	def_scene_scripts
@@ -10,8 +10,8 @@ ApricotCropSpeechHouse_MapScripts:
 ApricotCropSpeechHouseSuperNerdScript:
 	jumptextfaceplayer ApricotCropSpeechHouseSuperNerdText
 
-ApricotCropSpeechHouseLassScript:
-	jumptextfaceplayer ApricotCropSpeechHouseLassText
+ApricotCropSpeechHouseWomanScript:
+	jumptextfaceplayer ApricotCropSpeechHouseWomanText
 
 ApricotCropSpeechHouseSuperNerdText:
 	text "Did you see the"
@@ -23,7 +23,7 @@ ApricotCropSpeechHouseSuperNerdText:
 	cont "output."
 	done
 
-ApricotCropSpeechHouseLassText:
+ApricotCropSpeechHouseWomanText:
 	text "Oh hello!"
 
 	para "Are you a TRAINER"
@@ -46,4 +46,4 @@ ApricotCropSpeechHouse_MapEvents:
 
 	def_object_events
 	object_event  5,  3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ApricotCropSpeechHouseSuperNerdScript, -1
-	object_event  8,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ApricotCropSpeechHouseLassScript, -1
+	object_event  8,  3, SPRITE_WOMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ApricotCropSpeechHouseWomanScript, -1

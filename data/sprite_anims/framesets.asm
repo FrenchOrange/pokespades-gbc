@@ -500,8 +500,8 @@ SpriteAnimFrameData:
 	oamend
 
 .Frameset_PinkWalk:
-	frame SPRITE_ANIM_OAMSET_PINK_WALK_1,  8
-	frame SPRITE_ANIM_OAMSET_PINK_WALK_2,  8
-	frame SPRITE_ANIM_OAMSET_PINK_WALK_1,  8
-	frame SPRITE_ANIM_OAMSET_PINK_WALK_2,  8, OAM_X_FLIP
-	dorestart
+	oamframe SPRITE_ANIM_OAMSET_PINK_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_PINK_WALK_2,  8
+	oamframe SPRITE_ANIM_OAMSET_PINK_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_PINK_WALK_2,  8, OAM_X_FLIP
+	oamrestart

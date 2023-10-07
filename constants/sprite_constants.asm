@@ -15,7 +15,7 @@
 	const SPRITE_KURT ; 0b
 	const SPRITE_MOM ; 0c
 	const SPRITE_BLAINE ; 0d
-	const SPRITE_REDS_MOM ; 0e
+	const SPRITE_WOMAN ; 0e
 	const SPRITE_DAISY ; 0f
 	const SPRITE_ELM ; 10
 	const SPRITE_WILL ; 11
@@ -88,7 +88,7 @@
 	const SPRITE_POKE_BALL ; 54
 	const SPRITE_POKEDEX ; 55
 	const SPRITE_BAG ; 56
-	const SPRITE_GAMECUBE ; 57
+	const SPRITE_VIRTUAL_BOY ; 57
 	const SPRITE_LITTLE_GIRL ; 58
 	const SPRITE_ROCK ; 59
 	const SPRITE_BOULDER ; 5a
@@ -106,6 +106,7 @@
 	const SPRITE_KRIS_SURF ; 67
 	const SPRITE_CHRIS_RUN ; 68
 	const SPRITE_KRIS_RUN ; 69
+	const SPRITE_GAMECUBE ; 70
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
@@ -160,12 +161,9 @@ DEF SPRITE_VARS EQU const_value
 	const SPRITE_DOLL_1 ; f1
 	const SPRITE_DOLL_2 ; f2
 	const SPRITE_BIG_DOLL ; f3
-	const SPRITE_MOMVARIABLE ; f4
-	const SPRITE_OLIVINE_RIVAL ; f5
-	const SPRITE_AZALEA_ROCKET ; f6
-	const SPRITE_FUCHSIA_GYM_1 ; f7
-	const SPRITE_FUCHSIA_GYM_2 ; f8
-	const SPRITE_FUCHSIA_GYM_3 ; f9
-	const SPRITE_FUCHSIA_GYM_4 ; fa
-	const SPRITE_COPYCAT ; fb
-	const SPRITE_JANINE_IMPERSONATOR ; fc
+	const SPRITE_FUCHSIA_GYM_1 ; f4
+	const SPRITE_FUCHSIA_GYM_2 ; f5
+	const SPRITE_FUCHSIA_GYM_3 ; f6
+	const SPRITE_FUCHSIA_GYM_4 ; f7
+	const SPRITE_COPYCAT ; f8
+	const SPRITE_JANINE_IMPERSONATOR ; f9

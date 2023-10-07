@@ -201,12 +201,16 @@ BugCatcherJoshBeatenText:
 	done
 
 BugCatcherJoshAfterBattleText:
-	text "Rumors say PINECO"
-	line "has a powerful"
-	cont "evolution. But no"
+	text "There's this rumor"
+	line "that CATERPIE can"
+	cont "evolve into a"
 
-	para "one knows what can"
-	line "can trigger it."
+	para "legendary DRAGON-"
+	line "type POKéMON."
+
+	para "But nobody knows"
+	line "how to actually"
+	cont "pull it off."
 	done
 
 YoungsterMattSeenText:

@@ -10,7 +10,7 @@ DecorationNames:
 	li "NES"
 	li "SUPER NES"
 	li "NINTENDO 64"
-	li "GAMECUBE"
+	li "VIRTUAL BOY"
 	li "GOLD TROPHY"
 	li "SILVER TROPHY"
 	li "SURF PIKACHU DOLL"

@@ -203,7 +203,7 @@ wSpriteAnimData::
 
 wSpriteAnimDict::
 ; wSpriteAnimDict pairs keys with values
-; keys: SPRITE_ANIM_DICT_* indexes (taken from SpriteAnimSeqData)
+; keys: SPRITE_ANIM_DICT_* indexes (taken from SpriteAnimObjects)
 ; values: vTiles0 offsets
 	ds NUM_SPRITEANIMDICT_ENTRIES * 2
 
@@ -211,7 +211,7 @@ wSpriteAnimationStructs::
 ; wSpriteAnim1 - wSpriteAnim10
 for n, 1, NUM_SPRITE_ANIM_STRUCTS + 1
 ; field  0:   index
-; fields 1-3: loaded from SpriteAnimSeqData
+; fields 1-3: loaded from SpriteAnimObjects
 wSpriteAnim{d:n}:: sprite_anim_struct wSpriteAnim{d:n}
 endr
 wSpriteAnimationStructsEnd::
@@ -318,7 +318,6 @@ wTilemapEnd::
 
 ; This union spans 480 bytes.
 SECTION UNION "Miscellaneous", WRAM0
-
 
 ; box save buffer
 ; SaveBoxAddress uses this buffer in three steps because it
@@ -2779,10 +2778,10 @@ wOTPartyDataEnd::
 
 NEXTU
 ; catch tutorial dude pack
-wDudeNumBerries::
 wDudeNumItems:: db
 wDudeItems:: ds 2 * 4 + 1
 
+wDudeNumBerries::
 wDudeNumKeyItems:: db
 wDudeKeyItems:: ds 18 + 1
 
@@ -2934,6 +2933,8 @@ wObject{d:n}Struct:: object_struct wObject{d:n}
 endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
+
+	ds 40
 
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
@@ -3368,6 +3369,7 @@ wTempTilemap::
 ; 20x18 grid of 8x8 tiles
 	ds SCREEN_WIDTH * SCREEN_HEIGHT
 
+
 SECTION "Battle Tower RAM", WRAMX
 
 w3_d000:: ds 1
@@ -3482,13 +3484,13 @@ SECTION "Battle Animations", WRAMX
 
 wBattleAnimTileDict::
 ; wBattleAnimTileDict pairs keys with values
-; keys: ANIM_GFX_* indexes (taken from anim_*gfx arguments)
+; keys: BATTLE_ANIM_GFX_* indexes (taken from anim_*gfx arguments)
 ; values: vTiles0 offsets
 	ds NUM_BATTLEANIMTILEDICT_ENTRIES * 2
 
 wActiveAnimObjects::
 ; wAnimObject1 - wAnimObject10
-for n, 1, NUM_ANIM_OBJECTS + 1
+for n, 1, NUM_BATTLE_ANIM_STRUCTS + 1
 wAnimObject{d:n}:: battle_anim_struct wAnimObject{d:n}
 endr
 
