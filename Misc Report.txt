@@ -1,7 +1,7 @@
 
 BUGS:
 * HIGH
-** Player House 1F running Shoes walk back softlocks if triggered a third time. Happens on both sides of the carpet.
+** Player House 1F Running Shoes walk back softlocks if triggered a third time. Happens on both sides of the carpet.
 ** Lotus Town Roadblock Guy softlocks if the player triggers the leftmost event trigger first. Trying it after another works just fine.
 
 
@@ -15,9 +15,8 @@ TODO:
 * Implement naming the rival during the intro.
 
 
-* Finish Road A00 Starter event.
+* Finish Road A00 Starter event (Implement starter select screen. See lab ball code).
 
 
 * Finish Road A04 tileset.
 * Finish Magnolia City tileset.
-

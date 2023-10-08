@@ -129,7 +129,7 @@ IndigoGroupSprites:
 ; RoadA00, LotusTown, RoadA01, and RoadA03 are connected
 LotusGroupSprites:
 	db SPRITE_RIVAL
-	db SPRITE_ELM
+	db SPRITE_CYPRESS
 	db SPRITE_MOM
 	db SPRITE_FISHER
 	db SPRITE_COOLTRAINER_M

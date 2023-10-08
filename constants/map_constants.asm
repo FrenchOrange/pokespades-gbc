@@ -305,12 +305,12 @@ ENDM
 	map_const ROAD_A00,                                    40,  9 ;  2
 	map_const ROAD_A01,                                    19, 20 ;  3
 	map_const LOTUS_TOWN,                                  15, 12 ;  4
-	map_const ELMS_LAB,                                     5,  6 ;  5
-	map_const PLAYERS_HOUSE_1F,                             9,  5 ;  6
-	map_const PLAYERS_HOUSE_2F,                             5,  4 ;  7
-	map_const PLAYERS_NEIGHBORS_HOUSE,                      6,  4 ;  8
-	map_const RIVALS_HOUSE,                                14,  5 ;  9
-	map_const ROAD_A01_APRICOT_GATE,                        7,  4 ; 10
+	map_const PLAYERS_HOUSE_1F,                             9,  5 ;  5
+	map_const PLAYERS_HOUSE_2F,                             5,  4 ;  6
+	map_const PLAYERS_NEIGHBORS_HOUSE,                      6,  4 ;  7
+	map_const RIVALS_HOUSE,                                14,  5 ;  8
+	map_const ROAD_A01_APRICOT_GATE,                        7,  4 ;  9
+	map_const CYPRESS_LAB,                                  5,  6 ; 10
 	endgroup
 
 	newgroup SAFFRON                                              ; 25

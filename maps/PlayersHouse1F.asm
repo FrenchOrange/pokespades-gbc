@@ -118,7 +118,7 @@ MomScript:
 	checkscene
 	iffalse MeetMomTalkedScript ; SCENE_PLAYERSHOUSE1F_MEET_MOM
 	opentext
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	iftrue .GotAPokemon
 	writetext MomGoodLuckText
 	waitbutton
@@ -143,7 +143,7 @@ MomScript:
 	closetext
 	end
 
-ProfScript:
+PlayersHouse1FProfScript:
 	faceplayer
 	opentext
 	writetext ProfCypressText
@@ -374,6 +374,6 @@ PlayersHouse1F_MapEvents:
 	def_object_events
 	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
 	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  4,  4, SPRITE_ELM, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ProfScript, EVENT_PLAYERS_HOUSE_1F_PROF
+	object_event  4,  4, SPRITE_CYPRESS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PlayersHouse1FProfScript, EVENT_PLAYERS_HOUSE_1F_PROF
 	object_event -2, -3, SPRITE_BAG, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RunningShoesScript, EVENT_GOT_RUNNING_SHOES
 	object_event -2, -3, SPRITE_BAG, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, RunningShoesScript, EVENT_GOT_RUNNING_SHOES

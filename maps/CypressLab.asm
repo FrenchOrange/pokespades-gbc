@@ -1,17 +1,17 @@
 	object_const_def
-	const ELMSLAB_PROF
-	const ELMSLAB_PROFS_AIDE
-	const ELMSLAB_POKE_BALL1
-	const ELMSLAB_POKE_BALL2
-	const ELMSLAB_POKE_BALL3
+	const CYPRESSLAB_PROF
+	const CYPRESSLAB_PROFS_AIDE
+	const CYPRESSLAB_POKE_BALL1
+	const CYPRESSLAB_POKE_BALL2
+	const CYPRESSLAB_POKE_BALL3
 
-ElmsLab_MapScripts:
+CypressLab_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
 LabTryToLeaveScript:
-	turnobject ELMSLAB_PROF, DOWN
+	turnobject CYPRESSLAB_PROF, DOWN
 	opentext
 	writetext LabWhereGoingText
 	waitbutton
@@ -20,7 +20,7 @@ LabTryToLeaveScript:
 	end
 
 CyndaquilPokeBallScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	iftrue LookAtCypressPokeBallScript
 	refreshscreen
 	pokepic CYNDAQUIL
@@ -31,7 +31,7 @@ CyndaquilPokeBallScript:
 	writetext TakeCyndaquilText
 	yesorno
 	iffalse DidntChooseStarterScript
-	disappear ELMSLAB_POKE_BALL1
+	disappear CYPRESSLAB_POKE_BALL1
 	setevent EVENT_GOT_CYNDAQUIL_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
@@ -46,7 +46,7 @@ CyndaquilPokeBallScript:
 	end
 
 TotodilePokeBallScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	iftrue LookAtCypressPokeBallScript
 	refreshscreen
 	pokepic TOTODILE
@@ -57,7 +57,7 @@ TotodilePokeBallScript:
 	writetext TakeTotodileText
 	yesorno
 	iffalse DidntChooseStarterScript
-	disappear ELMSLAB_POKE_BALL2
+	disappear CYPRESSLAB_POKE_BALL2
 	setevent EVENT_GOT_TOTODILE_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
@@ -72,7 +72,7 @@ TotodilePokeBallScript:
 	end
 
 ChikoritaPokeBallScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	iftrue LookAtCypressPokeBallScript
 	refreshscreen
 	pokepic CHIKORITA
@@ -83,7 +83,7 @@ ChikoritaPokeBallScript:
 	writetext TakeChikoritaText
 	yesorno
 	iffalse DidntChooseStarterScript
-	disappear ELMSLAB_POKE_BALL3
+	disappear CYPRESSLAB_POKE_BALL3
 	setevent EVENT_GOT_CHIKORITA_FROM_ELM
 	writetext ChoseStarterText
 	promptbutton
@@ -164,7 +164,7 @@ CypressPokeBallText:
 	cont "PROF.CYPRESS."
 	done
 
-ElmsLab_MapEvents:
+CypressLab_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
@@ -176,7 +176,7 @@ ElmsLab_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  5,  2, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  5,  2, SPRITE_CYPRESS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
 	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
 	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyndaquilPokeBallScript, EVENT_CYNDAQUIL_POKEBALL_ROAD_A00
 	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TotodilePokeBallScript, EVENT_TOTODILE_POKEBALL_ROAD_A00

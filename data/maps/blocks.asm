@@ -169,8 +169,8 @@ Route17Route18Gate_Blocks:
 VermilionCity_Blocks:
 	INCBIN "maps/VermilionCity.ablk"
 
-ElmsLab_Blocks:
-	INCBIN "maps/ElmsLab.ablk"
+CypressLab_Blocks:
+	INCBIN "maps/CypressLab.ablk"
 
 CeruleanCity_Blocks:
 	INCBIN "maps/CeruleanCity.ablk"

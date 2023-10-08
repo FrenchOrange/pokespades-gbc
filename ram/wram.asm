@@ -3058,7 +3058,7 @@ wLancesRoomSceneID::                              db
 wHallOfFameSceneID::                              db
 wRoadA00SceneID::                                 db
 wLotusTownSceneID::                               db
-wElmsLabSceneID::                                 db
+wCypressLabSceneID::                              db
 wPlayersHouse1FSceneID::                          db
 wRoadA01SceneID::                                 db
 wApricotTownSceneID::                             db

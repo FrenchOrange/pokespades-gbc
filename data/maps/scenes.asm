@@ -24,7 +24,7 @@ MapScenes::
 	scene_var HALL_OF_FAME,                                wHallOfFameSceneID
 	scene_var ROAD_A00,                                    wRoadA00SceneID
 	scene_var LOTUS_TOWN,                                  wLotusTownSceneID
-	scene_var ELMS_LAB,                                    wElmsLabSceneID
+	scene_var CYPRESS_LAB,                                 wCypressLabSceneID
 	scene_var PLAYERS_HOUSE_1F,                            wPlayersHouse1FSceneID
 	scene_var ROAD_A01,                                    wRoadA01SceneID
 	scene_var APRICOT_TOWN,                                wApricotTownSceneID

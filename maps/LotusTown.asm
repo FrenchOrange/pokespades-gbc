@@ -115,6 +115,7 @@ LotusTownMomSaysGoodbye_Continue:
 	showemote EMOTE_SHOCK, LOTUSTOWN_MOM, 15
 	opentext
 	writetext LotusTownMomWaitText
+	waitbutton
 	closetext
 	playmusic MUSIC_MOM
 	applymovement LOTUSTOWN_MOM, LotusTownMomWalkUpThriceMovement

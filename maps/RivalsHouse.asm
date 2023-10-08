@@ -14,7 +14,7 @@ RivalsDad:
 RivalsMom:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	checkevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	iftrue .SawRoadA00Event
 	writetext RivalsMomPreEventText
 	waitbutton

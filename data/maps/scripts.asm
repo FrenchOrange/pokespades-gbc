@@ -92,7 +92,7 @@ INCLUDE "maps/FastShipB1F.asm"
 SECTION "Map Scripts 9", ROMX
 
 INCLUDE "maps/Route34.asm"
-INCLUDE "maps/ElmsLab.asm"
+INCLUDE "maps/CypressLab.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
 INCLUDE "maps/PlayersNeighborsHouse.asm"
