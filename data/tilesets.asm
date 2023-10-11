@@ -14,7 +14,7 @@ Tilesets::
 	tileset TilesetJohto
 	tileset TilesetJohtoModern
 	tileset TilesetKanto
-	tileset TilesetTemp1
+	tileset TilesetSentaApricot
 	tileset TilesetPlayersHouse
 	tileset TilesetPokecenter
 	tileset TilesetGate
@@ -35,5 +35,5 @@ Tilesets::
 	tileset TilesetDarkCave
 	tileset TilesetForest
 	tileset TilesetFriendlyShop
-	tileset TilesetMagnoliaJohto
+	tileset TilesetSentaMagnolia
 	assert_table_length NUM_TILESETS

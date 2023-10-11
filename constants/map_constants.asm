@@ -147,7 +147,7 @@ ENDM
 
 	newgroup MAGNOLIA                                             ; 10
 	map_const ROAD_A04,                                    37, 17 ;  1
-	map_const MAGNOLIA_CITY,                               30, 18 ;  2
+	map_const MAGNOLIA_CITY,                               30, 17 ;  2
 	map_const MAGNOLIA_MART,                                6,  4 ;  3
 	map_const MAGNOLIA_GYM,                                 7,  9 ;  4
 	map_const TRAINER_SCHOOL,                               6,  6 ;  5
@@ -310,7 +310,8 @@ ENDM
 	map_const PLAYERS_NEIGHBORS_HOUSE,                      6,  4 ;  7
 	map_const RIVALS_HOUSE,                                14,  5 ;  8
 	map_const ROAD_A01_APRICOT_GATE,                        7,  4 ;  9
-	map_const CYPRESS_LAB,                                  5,  6 ; 10
+	map_const ROAD_A03,                                    15, 22 ; 10
+	map_const CYPRESS_LAB,                                  5,  6 ; 11
 	endgroup
 
 	newgroup SAFFRON                                              ; 25
@@ -324,12 +325,11 @@ ENDM
 
 	newgroup APRICOT                                              ; 26
 	map_const ROAD_A02,                                    21, 15 ;  1
-	map_const ROAD_A03,                                    15, 22 ;  2
-	map_const APRICOT_TOWN,                                18, 12 ;  3
-	map_const APRICOT_MART,                                 6,  4 ;  4
-	map_const APRICOT_POKECENTER_1F,                        9,  5 ;  5
-	map_const APRICOT_PIKACHU_SPEECH_HOUSE,                 6,  4 ;  6
-	map_const APRICOT_CROP_SPEECH_HOUSE,                    6,  4 ;  7
+	map_const APRICOT_TOWN,                                18, 12 ;  2
+	map_const APRICOT_MART,                                 6,  4 ;  3
+	map_const APRICOT_POKECENTER_1F,                        9,  5 ;  4
+	map_const APRICOT_PIKACHU_SPEECH_HOUSE,                 6,  4 ;  5
+	map_const APRICOT_CROP_SPEECH_HOUSE,                    6,  4 ;  6
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

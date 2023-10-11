@@ -196,35 +196,35 @@ MagnoliaCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 25, 27, MAGNOLIA_MART, 1
-	warp_event 16,  7, MAGNOLIA_GYM, 1
-	warp_event 41,  5, MAGNOLIA_TRAIN_STATION, 2
-	warp_event 49, 19, MAGNOLIA_NET_SPEECH_HOUSE, 1
-	warp_event 28, 15, MAGNOLIA_POKECENTER_1F, 1
-	warp_event  9, 27, MAGNOLIA_STORIES_SPEECH_HOUSE, 1
-	warp_event 40,  5, MAGNOLIA_TRAIN_STATION, 1
-	warp_event 14, 35, ROAD_A04_MAGNOLIA_GATE, 3
-	warp_event 15, 35, ROAD_A04_MAGNOLIA_GATE, 4
-	warp_event 37,  3, MAGNOLIA_TRAIN_STATION, 3
-	warp_event 17,  7, MAGNOLIA_GYM, 2
+	warp_event 25, 25, MAGNOLIA_MART, 1
+	warp_event 16,  5, MAGNOLIA_GYM, 1
+	warp_event 41,  4, MAGNOLIA_TRAIN_STATION, 2
+	warp_event 49, 17, MAGNOLIA_NET_SPEECH_HOUSE, 1
+	warp_event 28, 13, MAGNOLIA_POKECENTER_1F, 1
+	warp_event  9, 25, MAGNOLIA_STORIES_SPEECH_HOUSE, 1
+	warp_event 40,  4, MAGNOLIA_TRAIN_STATION, 1
+	warp_event 14, 33, ROAD_A04_MAGNOLIA_GATE, 3
+	warp_event 15, 33, ROAD_A04_MAGNOLIA_GATE, 4
+	warp_event 37,  2, MAGNOLIA_TRAIN_STATION, 3
+	warp_event 17,  5, MAGNOLIA_GYM, 2
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 18, 24, BGEVENT_READ, MagnoliaCitySign
-	bg_event 18, 10, BGEVENT_READ, MagnoliaGymSign
-	bg_event 38,  8, BGEVENT_READ, MagnoliaPostbox
-	bg_event 43,  8, BGEVENT_READ, TrainStationSign
-	bg_event 44,  8, BGEVENT_READ, TrainStationSign
-	bg_event 37, 23, BGEVENT_READ, LockedHouse
-	bg_event 27, 15, BGEVENT_READ, MagnoliaCityPokecenterSign
+	bg_event 18, 22, BGEVENT_READ, MagnoliaCitySign
+	bg_event 18,  8, BGEVENT_READ, MagnoliaGymSign
+	bg_event 38,  6, BGEVENT_READ, MagnoliaPostbox
+	bg_event 43,  6, BGEVENT_READ, TrainStationSign
+	bg_event 44,  6, BGEVENT_READ, TrainStationSign
+	bg_event 37, 21, BGEVENT_READ, LockedHouse
+	bg_event 27, 13, BGEVENT_READ, MagnoliaCityPokecenterSign
 
 	def_object_events
-	object_event 17, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MagnoliaCityYoungsterScript, -1
-	object_event 14, 18, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MagnoliaCityLittleGirlScript, -1
-	object_event 33, 20, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityScientistScript, -1
-	object_event 48, 23, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityGentlemanScript, -1
-	object_event 35,  8, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityGameBoyKidScript, -1
-	object_event 46,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MagnoliaCitySuperNerdScript, -1
-	object_event 40,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityOfficerScript, -1
-	object_event 41,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityOfficerScript, -1
+	object_event 17, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MagnoliaCityYoungsterScript, -1
+	object_event 14, 16, SPRITE_LITTLE_GIRL, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MagnoliaCityLittleGirlScript, -1
+	object_event 33, 18, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityScientistScript, -1
+	object_event 48, 21, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityGentlemanScript, -1
+	object_event 35,  6, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityGameBoyKidScript, -1
+	object_event 46,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MagnoliaCitySuperNerdScript, -1
+	object_event 40,  5, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityOfficerScript, EVENT_OFFICERS_IN_MAGNOLIA
+	object_event 41,  5, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MagnoliaCityOfficerScript, EVENT_OFFICERS_IN_MAGNOLIA

@@ -31,6 +31,7 @@ MagnoliaGymGeoScript:
 	checkevent EVENT_GOT_TM47_STEEL_WING
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_BIRD_KEEPER_ABE
+;	setevent EVENT_OFFICERS_IN_MAGNOLIA
 	writetext GeoTemperBadgeText
 	promptbutton
 	verbosegiveitem TM_STEEL_WING
@@ -114,7 +115,7 @@ GeoWinLossText:
 	line "I of course have"
 	cont "lost, so as your"
 
-	para "reward I present."
+	para "reward I present"
 	line "you this official"
 
 	para "#MON LEAGUE"

@@ -848,7 +848,7 @@ _CGB_Pokepic:
 	sub c
 	inc a
 	ld c, a
-	ld a, PAL_BG_GRAY
+	ld a, PAL_BG_TEXT
 	call FillBoxCGB
 	call ApplyAttrmap
 	ret

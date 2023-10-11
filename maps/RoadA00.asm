@@ -150,8 +150,96 @@ RoadA00RivalScript:
 	end
 
 RoadA00BagScript:
-; Starter code goes here 
-	sjump .PickedAStarterPokemon
+	opentext
+.loop
+	writetext RoadA00ChooseAnyText
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .chikorita
+	ifequal 2, .cyndaquil
+	ifequal 3, .totodile
+	jump .cancel
+	
+.cancel
+	writetext RoadA00ProfChooseWiselyText
+	waitbutton
+	closetext
+	end
+
+.chikorita
+	refreshscreen
+	pokepic CHIKORITA
+	cry CHIKORITA
+	pause 25
+	closepokepic
+	opentext
+	writetext RoadA00WantThisPokemon
+	yesorno
+	iffalse .loop
+	getmonname STRING_BUFFER_3, CHIKORITA
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke CHIKORITA, 5
+	setevent EVENT_GOT_CHIKORITA_FROM_ELM
+	closetext
+	jump .PickedAStarterPokemon
+
+.cyndaquil
+	refreshscreen
+	pokepic CYNDAQUIL
+	cry CYNDAQUIL
+	pause 25
+	closepokepic
+	opentext
+	writetext RoadA00WantThisPokemon
+	yesorno
+	iffalse .loop
+	getmonname STRING_BUFFER_3, CYNDAQUIL
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke CYNDAQUIL, 5
+	setevent EVENT_GOT_CYNDAQUIL_FROM_ELM
+	closetext
+	jump .PickedAStarterPokemon
+
+.totodile
+	refreshscreen
+	pokepic TOTODILE
+	cry TOTODILE
+	pause 25
+	closepokepic
+	opentext
+	writetext RoadA00WantThisPokemon
+	yesorno
+	iffalse .loop
+	getmonname STRING_BUFFER_3, TOTODILE
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke TOTODILE, 5
+	setevent EVENT_GOT_TOTODILE_FROM_ELM
+	closetext
+	jump .PickedAStarterPokemon
+	
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 2, 12, TEXTBOX_Y - 1
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 4 ; items
+	db "CHIKORITA@"
+	db "CYNDAQUIL@"
+	db "TOTODILE@"
+	db "CANCEL@"
 
 .PickedAStarterPokemon
 	applymovement ROADA00_RIVAL, RoadA00RivalGoesToPickStarterMovement
@@ -212,6 +300,7 @@ RoadA00BagScript:
 	setscene SCENE_ROADA00_NOOP
 	setmapscene LOTUS_TOWN, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE
 	setmapscene ROAD_A01, SCENE_ROADA01_RIVAL_FIGHT
+	setevent EVENT_GOT_A_POKEMON_FROM_CYPRESS
 	setevent EVENT_ROAD_A00_PROF
 	setevent EVENT_ROAD_A00_RIVAL
 	setevent EVENT_ROAD_A00_BAG
@@ -413,6 +502,23 @@ RoadA00RivalYouGoFirstText:
 	text "You go first."
 	para "I'm fine with going"
 	line "last."
+	done
+
+RoadA00ChooseAnyText:
+	text "Choose any of the"
+	line "3 POKéMON here!"
+	done
+
+RoadA00WantThisPokemon:
+	text "Do you want this"
+	line "#MON?"
+	done
+
+ReceivedStarterText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
 	done
 
 RoadA00RivalWhatAreTheseText:

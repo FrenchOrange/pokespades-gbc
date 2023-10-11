@@ -3,7 +3,7 @@
 	const TILESET_JOHTO                ; 01
 	const TILESET_JOHTO_MODERN         ; 02
 	const TILESET_KANTO                ; 03
-	const TILESET_TEMP1                ; 04
+	const TILESET_SENTA_APRICOT        ; 04
 	const TILESET_PLAYERS_HOUSE        ; 05
 	const TILESET_POKECENTER           ; 06
 	const TILESET_GATE                 ; 07
@@ -24,7 +24,7 @@
 	const TILESET_DARK_CAVE            ; 22
 	const TILESET_FOREST               ; 23
 	const TILESET_FRIENDLY_SHOP        ; 24
-	const TILESET_MAGNOLIA_JOHTO       ; 25
+	const TILESET_SENTA_MAGNOLIA       ; 25
 DEF NUM_TILESETS EQU const_value
 
 ; wTileset struct size

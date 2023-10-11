@@ -188,14 +188,14 @@ INCBIN "data/tilesets/champions_room_metatiles.bin"
 TilesetChampionsRoomColl::
 INCLUDE "data/tilesets/champions_room_collision.asm"
 
-TilesetTemp1GFX::
-INCBIN "gfx/tilesets/temp1.2bpp.lz"
+TilesetSentaApricotGFX::
+INCBIN "gfx/tilesets/senta_apricot.2bpp.lz"
 
-TilesetTemp1Meta::
-INCBIN "data/tilesets/temp1_metatiles.bin"
+TilesetSentaApricotMeta::
+INCBIN "data/tilesets/senta_apricot_metatiles.bin"
 
-TilesetTemp1Coll::
-INCLUDE "data/tilesets/temp1_collision.asm"
+TilesetSentaApricotColl::
+INCLUDE "data/tilesets/senta_apricot_collision.asm"
 
 TilesetLighthouseGFX::
 INCBIN "gfx/tilesets/lighthouse.2bpp.lz"
@@ -215,6 +215,9 @@ INCBIN "data/tilesets/forest_metatiles.bin"
 TilesetForestColl::
 INCLUDE "data/tilesets/forest_collision.asm"
 
+
+SECTION "Tileset Data 7", ROMX
+
 TilesetFriendlyShopGFX::
 INCBIN "gfx/tilesets/friendly_shop.2bpp.lz"
 
@@ -224,17 +227,14 @@ INCBIN "data/tilesets/friendly_shop_metatiles.bin"
 TilesetFriendlyShopColl::
 INCLUDE "data/tilesets/friendly_shop_collision.asm"
 
+TilesetSentaMagnoliaGFX::
+INCBIN "gfx/tilesets/senta_magnolia.2bpp.lz"
 
-SECTION "Tileset Data 7", ROMX
+TilesetSentaMagnoliaMeta::
+INCBIN "data/tilesets/senta_magnolia_metatiles.bin"
 
-TilesetMagnoliaJohtoGFX::
-INCBIN "gfx/tilesets/magnolia_johto.2bpp.lz"
-
-TilesetMagnoliaJohtoMeta::
-INCBIN "data/tilesets/magnolia_johto_metatiles.bin"
-
-TilesetMagnoliaJohtoColl::
-INCLUDE "data/tilesets/magnolia_johto_collision.asm"
+TilesetSentaMagnoliaColl::
+INCLUDE "data/tilesets/senta_magnolia_collision.asm"
 
 
 SECTION "Tileset Data 8", ROMX
@@ -260,8 +260,8 @@ INCBIN "data/tilesets/johto_modern_attributes.bin"
 TilesetKantoAttr::
 INCBIN "data/tilesets/kanto_attributes.bin"
 
-TilesetTemp1Attr::
-INCBIN "data/tilesets/temp1_attributes.bin"
+TilesetSentaApricotAttr::
+INCBIN "data/tilesets/senta_apricot_attributes.bin"
 
 TilesetPlayersHouseAttr::
 INCBIN "data/tilesets/players_house_attributes.bin"
@@ -327,5 +327,5 @@ INCBIN "data/tilesets/forest_attributes.bin"
 TilesetFriendlyShopAttr::
 INCBIN "data/tilesets/friendly_shop_attributes.bin"
 
-TilesetMagnoliaJohtoAttr::
-INCBIN "data/tilesets/magnolia_johto_attributes.bin"
+TilesetSentaMagnoliaAttr::
+INCBIN "data/tilesets/senta_magnolia_attributes.bin"

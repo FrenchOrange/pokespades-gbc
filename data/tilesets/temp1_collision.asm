@@ -1,1 +1,0 @@
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 00

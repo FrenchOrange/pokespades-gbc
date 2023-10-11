@@ -116,7 +116,7 @@ RoadA01RivalBattleScript_Continue:
 	loadtrainer RIVAL1, RIVAL1_1_TOTODILE
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	sjump .FinishRivalBattle
 
 .Totodile:
@@ -125,7 +125,7 @@ RoadA01RivalBattleScript_Continue:
 	loadtrainer RIVAL1, RIVAL1_1_CHIKORITA
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	sjump .FinishRivalBattle
 
 .Chikorita:
@@ -134,7 +134,7 @@ RoadA01RivalBattleScript_Continue:
 	loadtrainer RIVAL1, RIVAL1_1_CYNDAQUIL
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	sjump .FinishRivalBattle
 
 .FinishRivalBattle:
@@ -359,7 +359,8 @@ RoadA01TimeToFightText:
 
 	para "So how about it,"
 	line "<PLAYER>?"
-	cont "It's time to fight!"
+
+	para "It's time to fight!"
 	done
 
 RoadA01RivalBeatenText:

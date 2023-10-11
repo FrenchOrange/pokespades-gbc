@@ -25,7 +25,7 @@ SpawnPoints:
 	spawn SILVER_CAVE_OUTSIDE,        23, 20
 
 	spawn LOTUS_TOWN,                  7, 20
-	spawn APRICOT_TOWN,               10,  8
+	spawn APRICOT_TOWN,               14,  8
 	spawn MAGNOLIA_CITY,              28, 16
 	spawn AZALEA_TOWN,                15, 10
 	spawn CIANWOOD_CITY,              23, 44

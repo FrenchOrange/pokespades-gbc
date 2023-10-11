@@ -2,21 +2,14 @@
 BUGS:
 * HIGH
 ** Player House 1F Running Shoes walk back softlocks if triggered a third time. Happens on both sides of the carpet.
-** Lotus Town Roadblock Guy softlocks if the player triggers the leftmost event trigger first. Trying it after another works just fine.
+** Lotus Town Roadblock Guy softlocks when stepping on the leftmost event trigger first. Trying it after another works just fine.
 
 
 * MILD
 ** Bedroom carpets need to be adjusted. (Decorations can't be obtained in the demo).
-** Twins April and May have a text overflow issue with their "spaced-out" name. (Can leave out the spaces for now).
 ** Forest environment bike permission. (Bike can't be obtained in the demo).
+** Twins April and May have a text overflow issue with their "spaced-out" name. (Can leave out the spaces for now).
 
 
 TODO:
 * Implement naming the rival during the intro.
-
-
-* Finish Road A00 Starter event (Implement starter select screen. See lab ball code).
-
-
-* Finish Road A04 tileset.
-* Finish Magnolia City tileset.
