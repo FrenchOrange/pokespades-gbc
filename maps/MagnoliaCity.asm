@@ -205,7 +205,6 @@ MagnoliaCity_MapEvents:
 	warp_event 40,  4, MAGNOLIA_TRAIN_STATION, 1
 	warp_event 14, 33, ROAD_A04_MAGNOLIA_GATE, 3
 	warp_event 15, 33, ROAD_A04_MAGNOLIA_GATE, 4
-	warp_event 37,  2, MAGNOLIA_TRAIN_STATION, 3
 	warp_event 17,  5, MAGNOLIA_GYM, 2
 
 	def_coord_events

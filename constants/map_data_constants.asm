@@ -109,9 +109,9 @@ DEF SPAWN_N_A EQU -1
 	const_def
 ; johto
 DEF JOHTO_FLYPOINT EQU const_value
-	const FLY_NEW_BARK
-	const FLY_CHERRYGROVE
-	const FLY_VIOLET
+	const FLY_LOTUS
+	const FLY_APRICOT
+	const FLY_MAGNOLIA
 	const FLY_AZALEA
 	const FLY_GOLDENROD
 	const FLY_ECRUTEAK

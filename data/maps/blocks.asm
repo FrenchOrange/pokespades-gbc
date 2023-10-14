@@ -208,7 +208,7 @@ LavenderMart_Blocks:
 CianwoodMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
-	INCBIN "maps/Mart.ablk"
+	INCBIN "maps/FriendlyShop.ablk"
 
 ApricotPokecenter1F_Blocks:
 MagnoliaPokecenter1F_Blocks:

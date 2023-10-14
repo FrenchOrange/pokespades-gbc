@@ -8,7 +8,7 @@
 PlayersHouse1F_MapScripts:
 	def_scene_scripts
 	scene_script PlayersHouse1FNoop1Scene, SCENE_PLAYERSHOUSE1F_MEET_MOM
-	scene_script PlayersHouse1FNoop1Scene, SCENE_PLAYERSHOUSE1F_RUNNING_SHOES
+	scene_script PlayersHouse1FNoop2Scene, SCENE_PLAYERSHOUSE1F_RUNNING_SHOES
 	scene_script PlayersHouse1FNoop3Scene, SCENE_PLAYERSHOUSE1F_NOOP
 
 	def_callbacks

@@ -369,29 +369,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons HOLLOWED_CAVERN
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, GEODUDE
-	db 2, ZUBAT
+	db 3, ZUBAT
 	db 2, GEODUDE
-	db 4, GEODUDE
-	db 2, TEDDIURSA
+	db 2, ZUBAT
 	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, ONIX
+	db 4, GEODUDE
+	db 6, ONIX
 	; day
-	db 3, GEODUDE
-	db 2, ZUBAT
+	db 3, ZUBAT
 	db 2, GEODUDE
-	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, ONIX
+	db 4, GEODUDE
+	db 6, ONIX
 	; nite
-	db 3, GEODUDE
-	db 2, ZUBAT
+	db 3, ZUBAT
 	db 2, GEODUDE
-	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, ONIX
+	db 4, GEODUDE
+	db 6, ONIX
 	end_grass_wildmons
 
 	def_grass_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE

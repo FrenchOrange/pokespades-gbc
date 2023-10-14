@@ -252,7 +252,7 @@ MagnoliaGym_MapEvents:
 
 	def_warp_events
 	warp_event  6, 17, MAGNOLIA_CITY, 2
-	warp_event  7, 17, MAGNOLIA_CITY, 11
+	warp_event  7, 17, MAGNOLIA_CITY, 10
 
 	def_coord_events
 
