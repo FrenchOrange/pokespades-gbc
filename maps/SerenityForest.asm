@@ -15,9 +15,9 @@ SerenityForest_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	callback MAPCALLBACK_TILES, OutOfBoundsBlockCallback
+	callback MAPCALLBACK_TILES, OutOfBoundsForestBlockCallback
 
-OutOfBoundsBlockCallback:
+OutOfBoundsForestBlockCallback:
 	changeblock 10, -2, $02
 	changeblock 10, -4, $02
 	changeblock 34, 60, $02

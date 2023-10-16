@@ -11,6 +11,11 @@ RoadA00_MapScripts:
 	scene_script RoadA00Noop3Scene, SCENE_ROADA00_NOOP
 
 	def_callbacks
+	callback MAPCALLBACK_TILES, OutOfBoundsBeachBlockCallback
+
+OutOfBoundsBeachBlockCallback:
+	changeblock 12, 18, $ad
+	endcallback
 
 RoadA00Noop1Scene:
 	end
@@ -628,6 +633,9 @@ RoadA00SignText:
 	text "ROAD A00"
 	done
 
+RoadA00HiddenPearl:
+	hiddenitem PEARL, EVENT_ROAD_A00_HIDDEN_PEARL
+
 RoadA00_MapEvents:
 	db 0, 0 ; filler
 
@@ -649,6 +657,7 @@ RoadA00_MapEvents:
 
 	def_bg_events
 	bg_event 12,  6, BGEVENT_READ, RoadA00Sign
+	bg_event 16, 15, BGEVENT_ITEM, RoadA00HiddenPearl
 
 	def_object_events
 	object_event 18,  8, SPRITE_CYPRESS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RoadA00ProfScript, EVENT_ROAD_A00_PROF

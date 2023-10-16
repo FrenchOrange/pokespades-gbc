@@ -310,7 +310,7 @@ ENDM
 	map_const PLAYERS_NEIGHBORS_HOUSE,                      6,  4 ;  7
 	map_const RIVALS_HOUSE,                                14,  5 ;  8
 	map_const ROAD_A01_APRICOT_GATE,                        7,  4 ;  9
-	map_const ROAD_A03,                                    15, 22 ; 10
+	map_const ROAD_A03,                                    14, 18 ; 10
 	map_const CYPRESS_LAB,                                  5,  6 ; 11
 	endgroup
 

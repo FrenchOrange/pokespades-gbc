@@ -117,7 +117,7 @@ RoadA04Sign:
 RoadA04TrainerTipsSign:
 	jumptext RoadA04TrainerTipsSignText
 
-RoadA04HiddenGreatBall:
+RoadA04HiddenPokeBall:
 	hiddenitem POKE_BALL, EVENT_ROAD_A04_HIDDEN_POKE_BALL
 
 LassSophiaSeenText:
@@ -263,7 +263,7 @@ RoadA04_MapEvents:
 	def_bg_events
 	bg_event 11, 19, BGEVENT_READ, RoadA04Sign
 	bg_event 38, 24, BGEVENT_READ, RoadA04TrainerTipsSign
-	bg_event 66, 10, BGEVENT_ITEM, RoadA04HiddenGreatBall
+	bg_event 66, 10, BGEVENT_ITEM, RoadA04HiddenPokeBall
 
 	def_object_events
 	object_event  3, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RoadA04ParlyzHeal, EVENT_ROAD_A04_PARALYZHEAL

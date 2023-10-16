@@ -79,7 +79,7 @@ SchoolLocker:
 	jumptextfaceplayer SchoolLockerText
 
 SchoolHiddenPokeBall:
-	hiddenitem POKE_BALL, EVENT_ROUTE_32_HIDDEN_SUPER_POTION
+	hiddenitem POKE_BALL, EVENT_TRAINER_SCHOOL_POKE_BALL
 
 SchoolBlackboard:
 	opentext

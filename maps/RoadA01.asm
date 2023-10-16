@@ -13,6 +13,17 @@ RoadA01_MapScripts:
 	scene_script RoadA01Noop2Scene, SCENE_ROADA01_RIVAL_FIGHT
 
 	def_callbacks
+	callback MAPCALLBACK_TILES, OutOfBoundsRoadA01BlockCallback
+
+OutOfBoundsRoadA01BlockCallback:
+	changeblock -2, 26, $9b
+	changeblock -4, 26, $76
+	changeblock -2, 28, $36
+	changeblock -4, 28, $35
+	changeblock -2, 30, $96
+	changeblock -4, 30, $96
+
+	endcallback
 
 RoadA01Noop1Scene:
 	end

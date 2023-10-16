@@ -58,13 +58,6 @@ JohtoWaterWildMons:
 	db 20, POLIWHIRL
 	end_water_wildmons
 
-	def_water_wildmons ROAD_A04
-	db 6 percent ; encounter rate
-	db 15, TENTACOOL
-	db 20, QUAGSIRE
-	db 20, TENTACRUEL
-	end_water_wildmons
-
 	def_water_wildmons ROUTE_34
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL

@@ -62,6 +62,12 @@ RoadA02FruitTree1:
 RoadA02FruitTree2:
 	fruittree FRUITTREE_ROAD_A02_2
 
+RoadA02HiddenAntidote:
+	hiddenitem ANTIDOTE, EVENT_ROAD_A02_HIDDEN_ANTIDOTE
+
+RoadA02HiddenPokeBall:
+	hiddenitem POKE_BALL, EVENT_ROAD_A02_HIDDEN_POKE_BALL
+
 YoungsterJasonSeenText:
 	text "Those POKé BALLS"
 	line "on your belt…"
@@ -175,6 +181,8 @@ RoadA02_MapEvents:
 	bg_event 26,  4, BGEVENT_READ, SerenityForestSign
 	bg_event 27,  4, BGEVENT_READ, SerenityForestSign
 	bg_event 35, 19, BGEVENT_READ, RoadA02TrainerTips
+	bg_event 24, 27, BGEVENT_ITEM, RoadA02HiddenAntidote
+	bg_event 13,  8, BGEVENT_ITEM, RoadA02HiddenPokeBall
 
 	def_object_events
 	object_event 26, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerYoungsterJason, -1

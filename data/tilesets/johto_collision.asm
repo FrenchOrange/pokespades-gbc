@@ -162,3 +162,19 @@
 	tilecoll FLOOR, FLOOR, WALL, CAVE ; a1
 	tilecoll WALL, WALL, FLOOR, FLOOR ; a2
 	tilecoll WALL, WALL, TALL_GRASS, TALL_GRASS ; a3
+	tilecoll WALL, WALL, FLOOR, FLOOR ; a4
+	tilecoll WALL, WALL, FLOOR, FLOOR ; a5
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; a6
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; a7
+	tilecoll FLOOR, WATER, FLOOR, WATER ; a8
+	tilecoll FLOOR, FLOOR, WATER, WATER ; a9
+	tilecoll WATER, WATER, WATER, WATER ; aa
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ab
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ac
+	tilecoll FLOOR, WATER, FLOOR, WATER ; ad
+	tilecoll WATER, WATER, WATER, WATER ; ae
+	tilecoll WALL, WALL, FLOOR, FLOOR ; af
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; b0
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; b1
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; b2
+	tilecoll FLOOR, WALL, FLOOR, WALL ; b3

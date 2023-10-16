@@ -112,17 +112,17 @@ RoadA03_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 21,  5, HOLLOWED_CAVERN, 1
+	warp_event 19,  5, HOLLOWED_CAVERN, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 26, 26, BGEVENT_READ, RoadA03Sign
-	bg_event 17, 21, BGEVENT_READ, RoadA03TrainerTipsSign
-	bg_event 18,  6, BGEVENT_READ, HollowedCavernSign
-	bg_event 19,  6, BGEVENT_READ, HollowedCavernSign
-	bg_event 23, 17, BGEVENT_ITEM, RoadA03HiddenPotion
+	bg_event 24, 26, BGEVENT_READ, RoadA03Sign
+	bg_event 15, 21, BGEVENT_READ, RoadA03TrainerTipsSign
+	bg_event 16,  6, BGEVENT_READ, HollowedCavernSign
+	bg_event 17,  6, BGEVENT_READ, HollowedCavernSign
+	bg_event 21, 17, BGEVENT_ITEM, RoadA03HiddenPotion
 
 	def_object_events
-	object_event 25, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerYoungsterBilly, -1
-	object_event 11, 12, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherJacob, -1
+	object_event 23, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerYoungsterBilly, -1
+	object_event  9, 12, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherJacob, -1
