@@ -2,8 +2,32 @@ _OakText6::
 	text "Now, what did you"
 	line "say your name was?"
 	prompt
-
+	
 _OakText7::
+	text "Right! So your"
+	line "name is <PLAYER>!"
+	prompt
+	
+_OakText8::
+	text "This doofus is"
+	line "your rival I"
+	cont "guess..."
+	
+	para "What's his name"
+	line "again?"
+	prompt
+	
+_OakText9::
+	text "Right! So his"
+	line "name is..."
+	
+	para "I forgot."
+	
+	para "jk lol it's"
+	line "<RIVAL>!"
+	prompt
+
+_OakText10::
 	text "<PLAYER>, are you"
 	line "ready?"
 
