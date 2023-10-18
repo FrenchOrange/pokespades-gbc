@@ -725,8 +725,6 @@ OakSpeech:
 	ld hl, OakText8
 	call PrintText
 	call NameRivalIntro
-	ld hl, OakText9
-	call PrintText
 	call RotateThreePalettesRight
 	call ClearTilemap
 	
@@ -737,7 +735,7 @@ OakSpeech:
 	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
 	call GetSGBLayout
 	call Intro_RotatePalettesLeftFrontpic	
-	ld hl, OakText10
+	ld hl, OakText9
 	call PrintText
 	ret
 
@@ -780,10 +778,6 @@ OakText8:
 	
 OakText9:
 	text_far _OakText9
-	text_end
-	
-OakText10:
-	text_far _OakText10
 	text_end
 
 StartPCItem:
@@ -902,10 +896,10 @@ RivalNameMenuHeaderIntro:
 	db 5 ; items
 	db "NEW NAME@"
 RivalNames:
+	db "HADE@"
 	db "SLATE@"
-	db "NAME 2@"
-	db "NAME 3@"
-	db "NAME 4@"
+	db "DAMAN@"
+	db "SUBARU@"
 	db 2 ; title indent
 	db " NAME @" ; title
 

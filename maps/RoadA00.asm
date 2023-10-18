@@ -164,9 +164,6 @@ RoadA00BagScript:
 	ifequal 1, .chikorita
 	ifequal 2, .cyndaquil
 	ifequal 3, .totodile
-	jump .cancel
-	
-.cancel
 	writetext RoadA00ProfChooseWiselyText
 	waitbutton
 	closetext

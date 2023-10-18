@@ -9,25 +9,15 @@ _OakText7::
 	prompt
 	
 _OakText8::
-	text "This doofus is"
-	line "your rival I"
-	cont "guess..."
+	text "This boy has been"
+	line "your rival since"
+	cont "you were a baby."
 	
-	para "What's his name"
-	line "again?"
-	prompt
-	
-_OakText9::
-	text "Right! So his"
-	line "name is..."
-	
-	para "I forgot."
-	
-	para "jk lol it's"
-	line "<RIVAL>!"
+	para "…Erm, what is"
+	line "his name again?"
 	prompt
 
-_OakText10::
+_OakText9::
 	text "<PLAYER>, are you"
 	line "ready?"
 

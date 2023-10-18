@@ -70,7 +70,6 @@ ShowPlayerNamingChoices:
 	ret
 
 INCLUDE "data/player_names.asm"
-INCLUDE "data/rival_names.asm"
 
 GetPlayerNameArray: ; unreferenced
 	ld hl, wPlayerName

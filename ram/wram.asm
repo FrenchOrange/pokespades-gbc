@@ -2369,7 +2369,7 @@ wSpriteFlags:: db
 
 wHandlePlayerStep:: db
 
-	ds 1
+wCurIconMonHasItemOrMail:: db
 
 wPartyMenuActionText:: db
 
@@ -3089,8 +3089,8 @@ wRuinsOfAlphInnerChamberSceneID::                 db
 wVictoryRoadSceneID::                             db
 wFastShip1FSceneID::                              db
 wFastShipB1FSceneID::                             db
-
-	ds 49
+; Should be "ds 78". So keep this in mind when adding new scene constants.
+	ds 51
 
 ; fight counts
 wJackFightCount::    db
