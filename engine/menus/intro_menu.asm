@@ -709,6 +709,36 @@ OakSpeech:
 	call NamePlayer
 	ld hl, OakText7
 	call PrintText
+	call RotateThreePalettesRight
+	call ClearTilemap	
+	
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, RIVAL1
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic
+
+	ld hl, OakText8
+	call PrintText
+	call NameRivalIntro
+	ld hl, OakText9
+	call PrintText
+	call RotateThreePalettesRight
+	call ClearTilemap
+	
+	xor a
+	ld [wCurPartySpecies], a
+	farcall DrawIntroPlayerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call Intro_RotatePalettesLeftFrontpic	
+	ld hl, OakText10
+	call PrintText
 	ret
 
 OakText1:
@@ -742,6 +772,18 @@ OakText6:
 
 OakText7:
 	text_far _OakText7
+	text_end
+	
+OakText8:
+	text_far _OakText8
+	text_end
+	
+OakText9:
+	text_far _OakText9
+	text_end
+	
+OakText10:
+	text_far _OakText10
 	text_end
 
 StartPCItem:
@@ -797,6 +839,75 @@ NamePlayer:
 	db "LOGAN@@@@@@"
 .Kris:
 	db "AMELIA@@@@@"
+	
+NameRivalIntro:
+	farcall MovePlayerPicRight
+	call ShowRivalNamingChoices
+	ld a, [wMenuCursorY]
+	dec a
+	jr z, .NewName
+	call StoreRivalName
+	farcall ApplyMonOrTrainerPals
+	farcall MovePlayerPicLeft
+	ret
+
+.NewName:
+	ld b, NAME_RIVAL
+	ld de, wRivalName
+	farcall NamingScreen
+
+	call RotateThreePalettesRight
+	call ClearTilemap
+
+	call LoadFontsExtra
+	call WaitBGMap
+
+	xor a
+	ld [wCurPartySpecies], a
+	ld a, RIVAL1
+	ld [wTrainerClass], a
+	call Intro_PrepTrainerPic
+
+	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
+	call GetSGBLayout
+	call RotateThreePalettesLeft
+
+	ld hl, wRivalName
+	ld de, RivalNames
+	call InitName
+	ret
+
+.RivalName:
+	db "SLATE@@@@@@"
+	
+ShowRivalNamingChoices:
+	ld hl, RivalNameMenuHeaderIntro
+	call LoadMenuHeader
+	call VerticalMenu
+	ld a, [wMenuCursorY]
+	dec a
+	call CopyNameFromMenu
+	call CloseWindow
+	ret
+
+RivalNameMenuHeaderIntro:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 10, TEXTBOX_Y - 1
+	dw .Names
+	db 1 ; default option
+	db 0 ; ????
+
+.Names:
+	db STATICMENU_CURSOR | STATICMENU_PLACE_TITLE | STATICMENU_DISABLE_B ; flags
+	db 5 ; items
+	db "NEW NAME@"
+RivalNames:
+	db "SLATE@"
+	db "NAME 2@"
+	db "NAME 3@"
+	db "NAME 4@"
+	db 2 ; title indent
+	db " NAME @" ; title
 
 GSShowPlayerNamingChoices: ; unreferenced
 	call LoadMenuHeader
@@ -813,6 +924,16 @@ StorePlayerName:
 	ld hl, wPlayerName
 	call ByteFill
 	ld hl, wPlayerName
+	ld de, wStringBuffer2
+	call CopyName2
+	ret
+	
+StoreRivalName:
+	ld a, "@"
+	ld bc, NAME_LENGTH
+	ld hl, wRivalName
+	call ByteFill
+	ld hl, wRivalName
 	ld de, wStringBuffer2
 	call CopyName2
 	ret
