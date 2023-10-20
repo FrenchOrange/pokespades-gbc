@@ -4,7 +4,7 @@ A rom hack based on [the Pokémon Crystal disassembly](https://github.com/pret/p
 
 (Do note that this rom hack is not compatible with base GSC.)*
 
-##Version
+## Version
 The current version is the demo proper, going up to the first badge. A list of known bugs listed [here](KNOWN_ISSUES.txt).
 
 ## Credits
