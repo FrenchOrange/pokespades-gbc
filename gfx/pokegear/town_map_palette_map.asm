@@ -1,10 +1,11 @@
 	const_def
-	const PAL_TOWNMAP_BORDER   ; 0
-	const PAL_TOWNMAP_EARTH    ; 1
-	const PAL_TOWNMAP_MOUNTAIN ; 2
-	const PAL_TOWNMAP_CITY     ; 3
-	const PAL_TOWNMAP_POI      ; 4
-	const PAL_TOWNMAP_POI_MTN  ; 5
+	const PAL_TOWNMAP_CITY     ; 0
+	const PAL_TOWNMAP_DUNGEON  ; 1
+	const PAL_TOWNMAP_PATH     ; 2
+	const PAL_TOWNMAP_INTEREST ; 3
+	const PAL_TOWNMAP_MOUNTAIN ; 4
+	const PAL_TOWNMAP_TREE     ; 5
+	const PAL_TOWNMAP_LAKE     ; 6
 
 MACRO townmappals
 	rept _NARG / 2
@@ -14,16 +15,19 @@ MACRO townmappals
 ENDM
 
 ; gfx/pokegear/town_map.png
-	townmappals EARTH,    EARTH,    EARTH,    MOUNTAIN, MOUNTAIN, MOUNTAIN, BORDER,   BORDER
-	townmappals EARTH,    EARTH,    CITY,     EARTH,    POI,      POI_MTN,  POI,      POI_MTN
-	townmappals EARTH,    EARTH,    EARTH,    MOUNTAIN, MOUNTAIN, MOUNTAIN, BORDER,   BORDER
-	townmappals EARTH,    EARTH,    BORDER,   EARTH,    EARTH,    BORDER,   BORDER,   BORDER
-	townmappals EARTH,    EARTH,    EARTH,    MOUNTAIN, MOUNTAIN, MOUNTAIN, BORDER,   BORDER
-	townmappals BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER
-; gfx/pokegear/pokegear.png
-	townmappals BORDER,   BORDER,   BORDER,   BORDER,   POI,      POI,      POI,      BORDER
-	townmappals BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER
-	townmappals CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     CITY
-	townmappals CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     BORDER
-	townmappals CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     CITY,     CITY
-	townmappals BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER,   BORDER
+	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals PATH,       PATH,      CITY,       PATH,       PATH,       PATH,       LAKE,       INTEREST
+	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals PATH,       PATH,      DUNGEON,    LAKE,       INTEREST,   PATH,       PATH,       PATH
+	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals CITY,       CITY,      CITY,       CITY,       PATH,       PATH,       PATH,       PATH
+	townmappals CITY,       CITY,      CITY,       CITY,       CITY,       CITY,       PATH,       PATH
+	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals CITY,       CITY,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals MOUNTAIN,   MOUNTAIN,  MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN
+	townmappals CITY,       DUNGEON,   PATH,       PATH,       PATH,       PATH,       PATH,       PATH
+	townmappals PATH,       PATH,      MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN
+	townmappals DUNGEON,    CITY,      CITY,       TREE,       PATH,       PATH,       PATH,       MOUNTAIN
+	townmappals MOUNTAIN,   PATH,      MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN,   MOUNTAIN
+	townmappals TREE,       TREE,      TREE,       TREE,       PATH,       PATH,       PATH,       MOUNTAIN
+	townmappals MOUNTAIN,   PATH,      MOUNTAIN,   MOUNTAIN,   PATH,       PATH,       PATH,       PATH

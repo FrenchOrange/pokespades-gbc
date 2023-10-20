@@ -117,10 +117,6 @@ Pokegear_LoadGFX:
 	ld de, vTiles2
 	ld a, BANK(TownMapGFX)
 	call FarDecompress
-	ld hl, PokegearGFX
-	ld de, vTiles2 tile $30
-	ld a, BANK(PokegearGFX)
-	call FarDecompress
 	ld hl, PokegearSpritesGFX
 	ld de, vTiles0
 	ld a, BANK(PokegearSpritesGFX)
@@ -336,14 +332,6 @@ InitPokegearTilemap:
 	ld e, 1
 .ok
 	farcall PokegearMap
-	ld a, $07
-	ld bc, SCREEN_WIDTH - 2
-	hlcoord 1, 2
-	call ByteFill
-	hlcoord 0, 2
-	ld [hl], $06
-	hlcoord 19, 2
-	ld [hl], $17
 	ld a, [wPokegearMapCursorLandmark]
 	call PokegearMap_UpdateLandmarkName
 	ret
@@ -698,16 +686,18 @@ PokegearMap_InitCursor:
 
 PokegearMap_UpdateLandmarkName:
 	push af
-	hlcoord 8, 0
-	lb bc, 2, 12
+	hlcoord 0, 0 ; window starts in top left corner
+	lb bc, 1, 20 ; one tile high and 20 tiles long
 	call ClearBox
 	pop af
 	ld e, a
 	push de
 	farcall GetLandmarkName
 	pop de
-	farcall TownMap_ConvertLineBreakCharacters
-	hlcoord 8, 0
+	ld de, wStringBuffer1
+	hlcoord 1, 0
+	call PlaceString
+	hlcoord 0, 0
 	ld [hl], $34
 	ret
 
@@ -1354,11 +1344,11 @@ PokegearSpritesGFX:
 INCBIN "gfx/pokegear/pokegear_sprites.2bpp.lz"
 
 RadioTilemapRLE:
-INCBIN "gfx/pokegear/radio.tilemap.rle"
+	ret
 PhoneTilemapRLE:
-INCBIN "gfx/pokegear/phone.tilemap.rle"
+	ret
 ClockTilemapRLE:
-INCBIN "gfx/pokegear/clock.tilemap.rle"
+	ret
 
 _UpdateRadioStation:
 	jr UpdateRadioStation
@@ -1898,24 +1888,6 @@ _TownMap:
 	ld e, KANTO_REGION
 .okay_tilemap
 	farcall PokegearMap
-	ld a, $07
-	ld bc, 6
-	hlcoord 1, 0
-	call ByteFill
-	hlcoord 0, 0
-	ld [hl], $06
-	hlcoord 7, 0
-	ld [hl], $17
-	hlcoord 7, 1
-	ld [hl], $16
-	hlcoord 7, 2
-	ld [hl], $26
-	ld a, $07
-	ld bc, NAME_LENGTH
-	hlcoord 8, 2
-	call ByteFill
-	hlcoord 19, 2
-	ld [hl], $17
 	ld a, [wTownMapCursorLandmark]
 	call PokegearMap_UpdateLandmarkName
 	farcall TownMapPals
@@ -2033,7 +2005,7 @@ _FlyMap:
 	xor a
 	ldh [hBGMapMode], a
 	farcall ClearSpriteAnims
-	call LoadTownMapGFX
+	call LoadTownMapGFX2
 	ld de, FlyMapLabelBorderGFX
 	ld hl, vTiles2 tile $30
 	lb bc, BANK(FlyMapLabelBorderGFX), 6
@@ -2136,29 +2108,22 @@ TownMapBubble:
 ; Draw the bubble containing the location text in the town map HUD
 
 ; Top-left corner
-	hlcoord 1, 0
+	hlcoord 0, 0
 	ld a, $30
 	ld [hli], a
 ; Top row
-	ld bc, 16
+	ld bc, 18
 	ld a, " "
 	call ByteFill
 ; Top-right corner
 	ld a, $31
-	ld [hl], a
-	hlcoord 1, 1
-
-; Middle row
-	ld bc, SCREEN_WIDTH - 2
-	ld a, " "
-	call ByteFill
+	ld [hli], a
 
 ; Bottom-left corner
-	hlcoord 1, 2
 	ld a, $32
 	ld [hli], a
 ; Bottom row
-	ld bc, 16
+	ld bc, 18
 	ld a, " "
 	call ByteFill
 ; Bottom-right corner
@@ -2166,8 +2131,8 @@ TownMapBubble:
 	ld [hl], a
 
 ; Print "Where?"
-	hlcoord 2, 0
-	ld de, .Where
+	hlcoord 1, 0
+	ld de, .GoWhere
 	call PlaceString
 ; Print the name of the default flypoint
 	call .Name
@@ -2176,8 +2141,8 @@ TownMapBubble:
 	ld [hl], $34
 	ret
 
-.Where:
-	db "Where?@"
+.GoWhere:
+	db "Go where?@"
 
 .Name:
 ; We need the map location of the default flypoint
@@ -2350,7 +2315,7 @@ Pokedex_GetArea:
 	ld hl, vTiles0 tile $78
 	ld c, 4
 	call Request2bpp
-	call LoadTownMapGFX
+	call LoadTownMapGFX2
 	call FillKantoMap
 	call .PlaceString_MonsNest
 	call TownMapPals
@@ -2452,13 +2417,6 @@ Pokedex_GetArea:
 	ld bc, SCREEN_WIDTH
 	ld a, " "
 	call ByteFill
-	hlcoord 0, 1
-	ld a, $06
-	ld [hli], a
-	ld bc, SCREEN_WIDTH - 2
-	ld a, $07
-	call ByteFill
-	ld [hl], $17
 	call GetPokemonName
 	hlcoord 2, 0
 	call PlaceString
@@ -2658,8 +2616,8 @@ TownMapPals:
 ; Current tile
 	ld a, [hli]
 	push hl
-; The palette map covers tiles $00 to $5f; $60 and above use palette 0
-	cp $60
+; The palette map covers tiles $00 to $7e; $7f and above use palette 0
+	cp $7f
 	jr nc, .pal0
 
 ; The palette data is condensed to nybbles, least-significant first.
@@ -2775,9 +2733,16 @@ TownMapPlayerIcon:
 LoadTownMapGFX:
 	ld hl, TownMapGFX
 	ld de, vTiles2
-	lb bc, BANK(TownMapGFX), 48
+	lb bc, BANK(TownMapGFX), 50
 	call DecompressRequest2bpp
 	ret
+
+LoadTownMapGFX2:
+ 	ld hl, TownMapGFX
+ 	ld de, vTiles2
+	lb bc, BANK(TownMapGFX), 127
+ 	call DecompressRequest2bpp
+ 	ret
 
 JohtoMap:
 INCBIN "gfx/pokegear/johto.bin"

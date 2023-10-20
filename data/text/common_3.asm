@@ -18,6 +18,12 @@ _OakText8::
 	prompt
 
 _OakText9::
+	text "That's right! I"
+	line "remember now! His"
+	cont "name is <RIVAL>!"
+	prompt
+
+_OakText10::
 	text "<PLAYER>, are you"
 	line "ready?"
 

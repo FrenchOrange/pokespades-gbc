@@ -725,6 +725,8 @@ OakSpeech:
 	ld hl, OakText8
 	call PrintText
 	call NameRivalIntro
+	ld hl, OakText9
+	call PrintText
 	call RotateThreePalettesRight
 	call ClearTilemap
 	
@@ -735,7 +737,7 @@ OakSpeech:
 	ld b, SCGB_TRAINER_OR_MON_FRONTPIC_PALS
 	call GetSGBLayout
 	call Intro_RotatePalettesLeftFrontpic	
-	ld hl, OakText9
+	ld hl, OakText10
 	call PrintText
 	ret
 
@@ -778,6 +780,10 @@ OakText8:
 	
 OakText9:
 	text_far _OakText9
+	text_end
+
+OakText10:
+	text_far _OakText10
 	text_end
 
 StartPCItem:

@@ -50,8 +50,3 @@ SECTION "Unown Font", ROMX
 UnownFont::
 INCBIN "gfx/font/unown_font.2bpp"
 
-
-SECTION "Pokégear GFX", ROMX
-
-PokegearGFX::
-INCBIN "gfx/pokegear/pokegear.2bpp.lz"

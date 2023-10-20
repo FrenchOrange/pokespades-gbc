@@ -176,17 +176,9 @@ InitPartyMenuBGPal0:
 	ret
 
 _CGB_PokegearPals:
-	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .male
-	ld hl, FemalePokegearPals
-	jr .got_pals
-
-.male
-	ld hl, MalePokegearPals
-.got_pals
+	ld hl, PokegearPals
 	ld de, wBGPals1
-	ld bc, 6 palettes
+	ld bc, 8 palettes
 	ld a, BANK(wBGPals1)
 	call FarCopyWRAM
 	call ApplyPals

@@ -3,19 +3,21 @@
 	const LANDMARK_SPECIAL           ; 00
 ; Johto landmarks
 	const LANDMARK_LOTUS_TOWN        ; 01
-	const LANDMARK_ROUTE_29          ; 02
-	const LANDMARK_APRICOT_TOWN      ; 03
-	const LANDMARK_ROAD_A02          ; 04
-	const LANDMARK_ROAD_A03          ; 05
-	const LANDMARK_MAGNOLIA_CITY     ; 06
-	const LANDMARK_SPROUT_TOWER      ; 07
+	const LANDMARK_ROAD_A00          ; 02
+	const LANDMARK_ROAD_A01          ; 03
+	const LANDMARK_APRICOT_TOWN      ; 04
+	const LANDMARK_ROAD_A02          ; 05
+	const LANDMARK_ROAD_A03          ; 06
+	const LANDMARK_SERENITY_FOREST   ; 07
 	const LANDMARK_ROAD_A04          ; 08
+	const LANDMARK_MAGNOLIA_CITY     ; 09
+	const LANDMARK_HOLLOWED_CAVERN   ; 0a
+	const LANDMARK_SPROUT_TOWER      ; shifts from here
 	const LANDMARK_RUINS_OF_ALPH     ; 09
 	const LANDMARK_UNION_CAVE        ; 0a
 	const LANDMARK_ROUTE_33          ; 0b
 	const LANDMARK_AZALEA_TOWN       ; 0c
 	const LANDMARK_SLOWPOKE_WELL     ; 0d
-	const LANDMARK_SERENITY_FOREST   ; 0e
 	const LANDMARK_ROUTE_34          ; 0f
 	const LANDMARK_GOLDENROD_CITY    ; 10
 	const LANDMARK_RADIO_TOWER       ; 11
@@ -45,9 +47,8 @@
 	const LANDMARK_BLACKTHORN_CITY   ; 29
 	const LANDMARK_DRAGONS_DEN       ; 2a
 	const LANDMARK_ROUTE_45          ; 2b
-	const LANDMARK_HOLLOWED_CAVERN   ; 2c
 	const LANDMARK_ROUTE_46          ; 2d
-	const LANDMARK_ROAD_A00          ; 2e
+	const LANDMARK_VICTORY_ROAD      ; 2e
 	const LANDMARK_INDIGO_PLATEAU    ; 2f
 DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_PALLET_TOWN       ; 2f
@@ -90,7 +91,6 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_CINNABAR_ISLAND   ; 55
 	const LANDMARK_ROUTE_21          ; 56
 	const LANDMARK_ROUTE_22          ; 57
-	const LANDMARK_VICTORY_ROAD      ; 58
 	const LANDMARK_ROUTE_23          ; 59
 	const LANDMARK_ROUTE_26          ; 5a
 	const LANDMARK_TOHJO_FALLS       ; 5b

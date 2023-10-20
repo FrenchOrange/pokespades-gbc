@@ -1336,11 +1336,8 @@ UnusedGSTitleBGPals:
 UnusedGSTitleOBPals:
 	ret
 
-MalePokegearPals:
+PokegearPals:
 INCLUDE "gfx/pokegear/pokegear.pal"
-
-FemalePokegearPals:
-INCLUDE "gfx/pokegear/pokegear_f.pal"
 
 ; Input: E must contain the offset of the selected palette from PartyMenuOBPals.
 SetFirstOBJPalette::
