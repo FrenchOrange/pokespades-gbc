@@ -3043,12 +3043,8 @@ wPokecenter2FSceneID::                            db
 wTradeCenterSceneID::                             db
 wColosseumSceneID::                               db
 wTimeCapsuleSceneID::                             db
-wCeruleanGymSceneID::                             db
-wRoute25SceneID::                                 db
 wVictoryRoadGateSceneID::                         db
 wMagnoliaTrainStationSceneID::                    db
-wRoute16GateSceneID::                             db
-wRoute17Route18GateSceneID::                      db
 wIndigoPlateauPokecenter1FSceneID::               db
 wWillsRoomSceneID::                               db
 wKogasRoomSceneID::                               db
@@ -3089,7 +3085,7 @@ wRuinsOfAlphInnerChamberSceneID::                 db
 wVictoryRoadSceneID::                             db
 wFastShip1FSceneID::                              db
 wFastShipB1FSceneID::                             db
-; Should be "ds 78". So keep this in mind when adding new scene constants.
+; Should be "ds 82". So keep this in mind when adding new scene constants.
 	ds 51
 
 ; fight counts

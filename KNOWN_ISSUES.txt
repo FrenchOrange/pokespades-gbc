@@ -10,4 +10,3 @@ BUGS:
 ** Bedroom carpets need to be adjusted. (Decorations can't be obtained in the demo).
 ** Forest environment bike permission. (Bike can't be obtained in the demo).
 ** Twins April and May have a text overflow issue with their "spaced-out" name. (Can leave out the spaces for now).
-** Pokémon League flypoint doesn't work as intended. (Can't be reached in the demo).

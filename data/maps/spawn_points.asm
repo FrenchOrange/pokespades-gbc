@@ -9,20 +9,7 @@ SpawnPoints:
 	table_width 4, SpawnPoints
 
 	spawn PLAYERS_HOUSE_2F,            3,  3
-	spawn VIRIDIAN_POKECENTER_1F,      5,  3
-
-	spawn PALLET_TOWN,                 5,  6
-	spawn VIRIDIAN_CITY,              23, 26
-	spawn PEWTER_CITY,                13, 26
-	spawn CERULEAN_CITY,              19, 22
-	spawn ROUTE_10_NORTH,             11,  2
-	spawn VERMILION_CITY,              9,  6
-	spawn LAVENDER_TOWN,               5,  6
-	spawn SAFFRON_CITY,                9, 30
-	spawn CELADON_CITY,               29, 10
-	spawn FUCHSIA_CITY,               19, 28
-	spawn CINNABAR_ISLAND,            11, 12
-	spawn SILVER_CAVE_OUTSIDE,        23, 20
+	spawn LOTUS_TOWN,                  7, 20
 
 	spawn LOTUS_TOWN,                  7, 20
 	spawn APRICOT_TOWN,               14,  8

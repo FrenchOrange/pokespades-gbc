@@ -75,18 +75,6 @@ EngineFlags:
 	; fly
 	engine_flag wVisitedSpawns, SPAWN_HOME
 	engine_flag wVisitedSpawns, SPAWN_DEBUG
-	engine_flag wVisitedSpawns, SPAWN_PALLET
-	engine_flag wVisitedSpawns, SPAWN_VIRIDIAN
-	engine_flag wVisitedSpawns, SPAWN_PEWTER
-	engine_flag wVisitedSpawns, SPAWN_CERULEAN
-	engine_flag wVisitedSpawns, SPAWN_ROCK_TUNNEL
-	engine_flag wVisitedSpawns, SPAWN_VERMILION
-	engine_flag wVisitedSpawns, SPAWN_LAVENDER
-	engine_flag wVisitedSpawns, SPAWN_SAFFRON
-	engine_flag wVisitedSpawns, SPAWN_CELADON
-	engine_flag wVisitedSpawns, SPAWN_FUCHSIA
-	engine_flag wVisitedSpawns, SPAWN_CINNABAR
-	engine_flag wVisitedSpawns, SPAWN_INDIGO
 	engine_flag wVisitedSpawns, SPAWN_LOTUS
 	engine_flag wVisitedSpawns, SPAWN_APRICOT
 	engine_flag wVisitedSpawns, SPAWN_MAGNOLIA
@@ -98,7 +86,7 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_MAHOGANY
 	engine_flag wVisitedSpawns, SPAWN_LAKE_OF_RAGE
 	engine_flag wVisitedSpawns, SPAWN_BLACKTHORN
-	engine_flag wVisitedSpawns, SPAWN_MT_SILVER
+	engine_flag wVisitedSpawns, SPAWN_INDIGO
 	engine_flag wVisitedSpawns, NUM_SPAWNS ; unused
 
 	engine_flag wLuckyNumberShowFlag, LUCKYNUMBERSHOW_GAME_OVER_F

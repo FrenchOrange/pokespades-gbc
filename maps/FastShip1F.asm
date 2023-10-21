@@ -69,7 +69,7 @@ FastShip1FSailor1Script:
 	special FadeOutPalettes
 	waitsfx
 	setevent EVENT_VERMILION_PORT_SAILOR_AT_GANGWAY
-	warp VERMILION_CITY, 1, 1
+	warp LOTUS_TOWN, 1, 1
 	end
 
 ._Olivine:

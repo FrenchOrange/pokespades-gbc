@@ -414,7 +414,7 @@ Route26_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  5, VICTORY_ROAD_GATE, 3
+	warp_event  7,  5, VICTORY_ROAD_GATE, 1
 
 	def_coord_events
 

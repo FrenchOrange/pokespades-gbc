@@ -9,12 +9,8 @@ MapScenes::
 	scene_var TRADE_CENTER,                                wTradeCenterSceneID
 	scene_var COLOSSEUM,                                   wColosseumSceneID
 	scene_var TIME_CAPSULE,                                wTimeCapsuleSceneID
-	scene_var CERULEAN_GYM,                                wCeruleanGymSceneID
-	scene_var ROUTE_25,                                    wRoute25SceneID
 	scene_var VICTORY_ROAD_GATE,                           wVictoryRoadGateSceneID
 	scene_var MAGNOLIA_TRAIN_STATION,                      wMagnoliaTrainStationSceneID
-	scene_var ROUTE_16_GATE,                               wRoute16GateSceneID
-	scene_var ROUTE_17_ROUTE_18_GATE,                      wRoute17Route18GateSceneID
 	scene_var INDIGO_PLATEAU_POKECENTER_1F,                wIndigoPlateauPokecenter1FSceneID
 	scene_var WILLS_ROOM,                                  wWillsRoomSceneID
 	scene_var KOGAS_ROOM,                                  wKogasRoomSceneID

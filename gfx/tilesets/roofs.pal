@@ -22,86 +22,42 @@
 	RGB 11,10,16, 05,06,07 ; morn/day
 	RGB 03,04,08, 00,00,00 ; nite
 
-; group 6 (Cinnabar)
-	RGB 31,10,00, 18,06,00 ; morn/day
-	RGB 18,05,09, 17,08,07 ; nite
-
-; group 7 (Cerulean)
-	RGB 17,27,31, 05,15,31 ; morn/day
-	RGB 07,08,22, 07,07,16 ; nite
-
-; group 8 (Azalea)
+; group 6 (Azalea)
 	RGB 22,20,10, 17,14,03 ; morn/day
 	RGB 11,11,05, 10,09,07 ; nite
 
-; group 9 (Lake of Rage)
+; group 7 (Lake of Rage)
 	RGB 31,08,04, 09,09,08 ; morn/day
 	RGB 18,05,09, 09,09,08 ; nite
 
-; group 10 (Violet)
+; group 8 (Violet)
 	RGB 18,19,31, 13,12,31 ; morn/day
 	RGB 10,09,20, 04,03,18 ; nite
 
-; group 11 (Goldenrod)
+; group 9 (Goldenrod)
 	RGB 25,25,00, 20,17,08 ; morn/day
 	RGB 12,12,00, 10,09,05 ; nite
 
-; group 12 (Vermilion)
-	RGB 27,23,01, 23,11,00 ; morn/day
-	RGB 15,11,01, 11,10,01 ; nite
-
-; group 13 (Pallet)
-	RGB 27,28,31, 17,19,22 ; morn/day
-	RGB 14,14,18, 10,09,13 ; nite
-
-; group 14 (Pewter)
-	RGB 19,19,16, 10,12,15 ; morn/day
-	RGB 09,09,11, 04,05,07 ; nite
-
-; group 15 (Mount Moon Square)
+; group 10 (Unused)
 	RGB 14,17,31, 07,11,15 ; morn/day
 	RGB 09,13,19, 07,07,16 ; nite
 
-; group 16 (Indigo)
+; group 11 (Indigo)
 	RGB 21,21,21, 13,13,13 ; morn/day
 	RGB 11,11,19, 07,07,12 ; nite
 
-; group 17 (Fuchsia)
-	RGB 31,18,29, 17,13,20 ; morn/day
-	RGB 14,06,12, 11,03,10 ; nite
-
-; group 18 (Lavender)
-	RGB 23,15,31, 16,05,31 ; morn/day
-	RGB 12,07,17, 08,06,10 ; nite
-
-; group 19 (Silver Cave)
-	RGB 21,21,25, 16,16,16 ; morn/day
-	RGB 13,13,13, 07,07,07 ; nite
-
-; group 20 (Cable Club)
+; group 13 (Cable Club)
 	RGB 21,21,21, 11,11,11 ; morn/day
 	RGB 21,21,21, 11,11,11 ; nite
 
-; group 21 (Celadon)
-	RGB 19,31,15, 31,22,02 ; morn/day
-	RGB 12,13,09, 09,12,03 ; nite
-
-; group 22 (Cianwood)
+; group 14 (Cianwood)
 	RGB 15,10,31, 07,05,15 ; morn/day
 	RGB 06,05,17, 02,02,08 ; nite
 
-; group 23 (Viridian)
-	RGB 21,31,07, 13,25,04 ; morn/day
-	RGB 09,14,08, 06,10,04 ; nite
-
-; group 24 (New Bark)
+; group 15 (New Bark)
 	RGB 10,21,21, 03,14,18 ; morn/day
 	RGB 06,12,19, 02,09,16 ; nite
 
-; group 25 (Saffron)
-	RGB 31,26,00, 31,15,00 ; morn/day
-	RGB 13,13,01, 08,08,01 ; nite
-
-; group 26 (Cherrygrove)
+; group 16 (Cherrygrove)
 	RGB 18,19,31, 13,12,31 ; morn/day
 	RGB 10,09,20, 04,03,18 ; nite

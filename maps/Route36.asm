@@ -22,6 +22,9 @@ Route36Noop1Scene:
 Route36Noop2Scene:
 	end
 
+WateredWeirdTreeScript::
+	end
+
 Route36ArthurCallback:
 	readvar VAR_WEEKDAY
 	ifequal THURSDAY, .ArthurAppears
@@ -44,9 +47,6 @@ Route36SuicuneScript:
 	setscene SCENE_ROUTE36_NOOP
 	clearevent EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY
 	setmapscene CIANWOOD_CITY, SCENE_CIANWOODCITY_SUICUNE_AND_EUSINE
-	end
-
-WateredWeirdTreeScript::
 	end
 
 Route36FloriaScript:
