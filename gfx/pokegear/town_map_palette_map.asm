@@ -6,6 +6,7 @@
 	const PAL_TOWNMAP_MOUNTAIN ; 4
 	const PAL_TOWNMAP_TREE     ; 5
 	const PAL_TOWNMAP_LAKE     ; 6
+	const PAL_TOWNMAP_WAVE     ; 7
 
 MACRO townmappals
 	rept _NARG / 2
@@ -18,7 +19,7 @@ ENDM
 	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
 	townmappals PATH,       PATH,      CITY,       PATH,       PATH,       PATH,       LAKE,       INTEREST
 	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
-	townmappals PATH,       PATH,      DUNGEON,    LAKE,       INTEREST,   PATH,       PATH,       PATH
+	townmappals PATH,       WAVE,      DUNGEON,    LAKE,       INTEREST,   PATH,       PATH,       PATH
 	townmappals PATH,       PATH,      PATH,       PATH,       PATH,       PATH,       PATH,       PATH
 	townmappals CITY,       CITY,      CITY,       CITY,       PATH,       PATH,       PATH,       PATH
 	townmappals CITY,       CITY,      CITY,       CITY,       CITY,       CITY,       PATH,       PATH
