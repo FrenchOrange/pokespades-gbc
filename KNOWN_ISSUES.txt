@@ -8,5 +8,4 @@ BUGS:
 
 * MILD
 ** Bedroom carpets need to be adjusted. (Decorations can't be obtained in the demo).
-** Forest environment bike permission. (Bike can't be obtained in the demo).
 ** Twins April and May have a text overflow issue with their "spaced-out" name. (Can leave out the spaces for now).
