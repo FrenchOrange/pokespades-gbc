@@ -19,7 +19,7 @@ SpriteMons:
 	db CLEFAIRY
 	db CHARMANDER
 	db JYNX
-	db STARMIE
+	db STARYU
 	db BULBASAUR
 	db JIGGLYPUFF
 	db GRIMER

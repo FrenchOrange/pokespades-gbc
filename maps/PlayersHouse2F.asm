@@ -111,6 +111,7 @@ DebugSign:
 	giveitem MASTER_BALL, 99
 	giveitem RARE_CANDY, 99
 	giveitem MAX_REPEL, 99
+	giveitem ESCAPE_ROPE, 99
 	giveitem TOWN_MAP
 	giveitem BICYCLE
 	giveitem HM_CUT
@@ -120,15 +121,21 @@ DebugSign:
 	giveitem HM_FLASH
 	giveitem HM_WHIRLPOOL
 	giveitem HM_WATERFALL
-	giveitem TM_ROCK_SMASH
+	giveitem TM_ROCK_SMASH, 99
+	giveitem TM_DIG, 99
 	opentext
 	givepoke FERALIGATR, 100
 	givepoke PIDGEOT, 100
 	givepoke LAPRAS, 100
 	givepoke PIKACHU, 100
+	givepoke DIGLETT, 100
 	closetext
 	setevent EVENT_GOT_RUNNING_SHOES
 	setmapscene PLAYERS_HOUSE_1F, SCENE_PLAYERSHOUSE1F_NOOP
+;	playsound SFX_WARP_TO
+;	special FadeOutPalettes
+;	waitsfx
+;	warp AZALEA_TOWN, 10, 10
 	end
 
 PlayersHouse2F_MapEvents:

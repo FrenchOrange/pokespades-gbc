@@ -37,14 +37,14 @@ _AnimateTileset::
 
 TilesetJohtoModernAnim:
 TilesetKantoAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateWaterPalette
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
-	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
@@ -63,44 +63,45 @@ TilesetSentaMagnoliaAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetParkAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw NULL,  AnimateWaterPalette
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
 	dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $5f, AnimateFountainTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
 TilesetForestAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateWaterPalette
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
 	dw vTiles2 tile $53, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $53, WriteTileFromAnimBuffer
-	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
 TilesetJohtoAnim:
 TilesetSentaApricotAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateWaterPalette
-	dw NULL,  WaitTileAnimation
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
 	dw NULL,  AnimateFlowerTile
 	dw vTiles2 tile $53, ReadTileToAnimBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $53, WriteTileFromAnimBuffer
+	dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
