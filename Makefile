@@ -106,7 +106,7 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokespades_obj):         RGBASMFLAGS +=
+$(pokespades_obj):          RGBASMFLAGS +=
 $(pokecrystal11_obj):       RGBASMFLAGS += -D _CRYSTAL11
 $(pokecrystal_debug_obj):   RGBASMFLAGS += -D _DEBUG
 $(pokecrystal11_debug_obj): RGBASMFLAGS += -D _CRYSTAL11 -D _DEBUG

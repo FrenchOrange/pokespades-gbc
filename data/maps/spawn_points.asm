@@ -11,9 +11,9 @@ SpawnPoints:
 	spawn PLAYERS_HOUSE_2F,            3,  3
 	spawn LOTUS_TOWN,                  7, 20
 
-	spawn LOTUS_TOWN,                  7, 20
-	spawn APRICOT_TOWN,               14,  8
-	spawn MAGNOLIA_CITY,              28, 16
+	spawn LOTUS_TOWN,                  9, 20
+	spawn APRICOT_TOWN,               16, 10
+	spawn MAGNOLIA_CITY,              26, 14
 	spawn AZALEA_TOWN,                15, 10
 	spawn CIANWOOD_CITY,              23, 44
 	spawn GOLDENROD_CITY,             15, 28

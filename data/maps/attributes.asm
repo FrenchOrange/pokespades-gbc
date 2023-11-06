@@ -97,16 +97,16 @@ MACRO connection
 ENDM
 
 
-	map_attributes LotusTown, LOTUS_TOWN, $05, NORTH | EAST
-	connection north, RoadA01, ROAD_A01, -3
+	map_attributes LotusTown, LOTUS_TOWN, $00, NORTH | EAST
+	connection north, RoadA01, ROAD_A01, -2
 	connection east, RoadA00, ROAD_A00, 3
 
-	map_attributes ApricotTown, APRICOT_TOWN, $05, WEST | EAST
+	map_attributes ApricotTown, APRICOT_TOWN, $00, WEST | EAST
 	connection west, RoadA01, ROAD_A01, 0
 	connection east, RoadA02, ROAD_A02, -2
 
-	map_attributes MagnoliaCity, MAGNOLIA_CITY, $05, SOUTH
-	connection south, RoadA04, ROAD_A04, 0
+	map_attributes MagnoliaCity, MAGNOLIA_CITY, $00, SOUTH
+	connection south, RoadA04, ROAD_A04, -2
 
 	map_attributes AzaleaTown, AZALEA_TOWN, $05, WEST | EAST
 	connection west, Route34, ROUTE_34, -18
@@ -147,19 +147,19 @@ ENDM
 	connection west, LotusTown, LOTUS_TOWN, -3
 	connection east, Route26, ROUTE_26, -45
 
-	map_attributes RoadA01, ROAD_A01, $05, SOUTH | WEST | EAST
-	connection south, LotusTown, LOTUS_TOWN, 3
-	connection west, RoadA03, ROAD_A03, -7
+	map_attributes RoadA01, ROAD_A01, $00, SOUTH | WEST | EAST
+	connection south, LotusTown, LOTUS_TOWN, 2
+	connection west, RoadA03, ROAD_A03, -6
 	connection east, ApricotTown, APRICOT_TOWN, 0
 
-	map_attributes RoadA02, ROAD_A02, $05, WEST
+	map_attributes RoadA02, ROAD_A02, $00, WEST
 	connection west, ApricotTown, APRICOT_TOWN, 2
 
-	map_attributes RoadA03, ROAD_A03, $05, EAST
-	connection east, RoadA01, ROAD_A01, 7
+	map_attributes RoadA03, ROAD_A03, $00, EAST
+	connection east, RoadA01, ROAD_A01, 6
 
-	map_attributes RoadA04, ROAD_A04, $05, NORTH
-	connection north, MagnoliaCity, MAGNOLIA_CITY, 0
+	map_attributes RoadA04, ROAD_A04, $00, NORTH
+	connection north, MagnoliaCity, MAGNOLIA_CITY, 2
 
 	map_attributes Route33, ROUTE_33, $05, WEST
 	connection west, AzaleaTown, AZALEA_TOWN, 0

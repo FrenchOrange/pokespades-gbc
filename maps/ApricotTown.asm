@@ -252,26 +252,26 @@ ApricotTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 28,  7, APRICOT_MART, 1
-	warp_event 14,  7, APRICOT_POKECENTER_1F, 1
-	warp_event 17, 15, APRICOT_PIKACHU_SPEECH_HOUSE, 1
-	warp_event  7, 15, APRICOT_CROP_SPEECH_HOUSE, 1
-	warp_event  2,  4, ROAD_A01_APRICOT_GATE, 3
-	warp_event  2,  5, ROAD_A01_APRICOT_GATE, 4
+	warp_event 30,  9, APRICOT_MART, 1
+	warp_event 16,  9, APRICOT_POKECENTER_1F, 1
+	warp_event 19, 17, APRICOT_PIKACHU_SPEECH_HOUSE, 1
+	warp_event  9, 17, APRICOT_CROP_SPEECH_HOUSE, 1
+	warp_event  4,  6, ROAD_A01_APRICOT_GATE, 3
+	warp_event  4,  7, ROAD_A01_APRICOT_GATE, 4
 
 	def_coord_events
-	coord_event 20,  8, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk1
-	coord_event 20,  9, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk2
-	coord_event 20, 10, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk3
+	coord_event 22, 10, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk1
+	coord_event 22, 11, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk2
+	coord_event 22, 12, SCENE_APRICOTTOWN_MEET_CLERK, ApricotMartClerk3
 
 	def_bg_events
-	bg_event 18,  7, BGEVENT_READ, ApricotCitySign
-	bg_event  6,  2, BGEVENT_READ, ApricotCitySign2
-	bg_event 13,  7, BGEVENT_READ, ApricotCityPokecenterSign
+	bg_event 20,  9, BGEVENT_READ, ApricotCitySign
+	bg_event  8,  4, BGEVENT_READ, ApricotCitySign2
+	bg_event 15,  9, BGEVENT_READ, ApricotCityPokecenterSign
 
 	def_object_events
-	object_event 21,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CLERK_IN_FRIENDLY_SHOP
-	object_event 13, 12, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, ApricotTeacherScript, -1
-	object_event 10,  3, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, ApricotTwinScript, -1
-	object_event 20, 18, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ApricotGentlemanScript, -1
-	object_event 27, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route30Antidote, EVENT_APRICOT_TOWN_ANTIDOTE
+	object_event 23,  9, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CLERK_IN_FRIENDLY_SHOP
+	object_event 15, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, ApricotTeacherScript, -1
+	object_event 12,  5, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, ApricotTwinScript, -1
+	object_event 22, 20, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ApricotGentlemanScript, -1
+	object_event 29, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route30Antidote, EVENT_APRICOT_TOWN_ANTIDOTE

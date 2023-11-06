@@ -16,13 +16,12 @@ RoadA01_MapScripts:
 	callback MAPCALLBACK_TILES, OutOfBoundsRoadA01BlockCallback
 
 OutOfBoundsRoadA01BlockCallback:
-	changeblock -2, 26, $9b
-	changeblock -4, 26, $76
-	changeblock -2, 28, $36
-	changeblock -4, 28, $35
-	changeblock -2, 30, $96
-	changeblock -4, 30, $96
-
+	changeblock 36,  2, $b5
+	changeblock 38,  2, $b5
+	changeblock 40,  2, $b5
+	changeblock 36, 10, $c4
+	changeblock 38, 10, $c4
+	changeblock 40, 10, $c4
 	endcallback
 
 RoadA01Noop1Scene:
@@ -497,26 +496,26 @@ RoadA01_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 35,  4, ROAD_A01_APRICOT_GATE, 1
-	warp_event 35,  5, ROAD_A01_APRICOT_GATE, 2
+	warp_event 35,  6, ROAD_A01_APRICOT_GATE, 1
+	warp_event 35,  7, ROAD_A01_APRICOT_GATE, 2
 
 	def_coord_events
-	coord_event 22, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial1
-	coord_event 23, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial2
-	coord_event 24, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial3
-	coord_event 25, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial4
-	coord_event 26, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial5
-	coord_event 27, 10, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial6
+	coord_event 22, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial1
+	coord_event 23, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial2
+	coord_event 24, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial3
+	coord_event 25, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial4
+	coord_event 26, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial5
+	coord_event 27, 12, SCENE_ROADA01_RIVAL_FIGHT, RoadA01Tutorial6
 
 	def_bg_events
-	bg_event 22, 34, BGEVENT_READ, RoadA01Sign
-	bg_event 11, 21, BGEVENT_READ, RoadA01TrainerTips
+	bg_event 22, 36, BGEVENT_READ, RoadA01Sign
+	bg_event 11, 23, BGEVENT_READ, RoadA01TrainerTips
 
 	def_object_events
-	object_event 25,  5, SPRITE_CYPRESS, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROAD_A01_RIVAL_BATTLE
-	object_event 23,  5, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROAD_A01_RIVAL_BATTLE
-	object_event 11, 32, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01SuperNerdScript, -1
-	object_event 27, 34, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01YoungsterScript, -1
-	object_event 13,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01CooltrainerMScript, -1
-	object_event 23,  1, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA01FruitTree, -1
-	object_event  1, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RoadA01Potion, EVENT_ROAD_A01_POTION
+	object_event 25,  7, SPRITE_CYPRESS, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROAD_A01_RIVAL_BATTLE
+	object_event 23,  7, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROAD_A01_RIVAL_BATTLE
+	object_event 11, 34, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01SuperNerdScript, -1
+	object_event 27, 36, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01YoungsterScript, -1
+	object_event 13, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA01CooltrainerMScript, -1
+	object_event 23,  3, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA01FruitTree, -1
+	object_event  1, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RoadA01Potion, EVENT_ROAD_A01_POTION

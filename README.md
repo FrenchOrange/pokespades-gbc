@@ -14,5 +14,6 @@ Some HUGE thanks to:
 * Artist [LuigiTKO](https://twitter.com/LuigiTKO) for his gorgeous GSC-styled Pokémon icons.
 * The artists from Pokémon Showdown and Pokémon Crystal Clear for a few Pokémon icons.
 * Pokémon Coral for the lamppost base, and Red++ V4 for the gate house and gym sign tiles.
+* Nekroba DA for helping out with the new tree tiles, which are based on the ones from his hack, [Pokémon Crystal Cross](https://github.com/NekrobaDA/Pokemon_Crystal_Cross).
 * My friends Idain and Seasick, for graphical help, as well as general troubleshooting.
-* Farore, for the already incredible rom hack this is based on.
+* Farore, for the already incredible rom hack this project is based on.

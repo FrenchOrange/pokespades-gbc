@@ -171,23 +171,23 @@ RoadA02_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 24,  0, SERENITY_FOREST, 3
-	warp_event 25,  0, SERENITY_FOREST, 4
+	warp_event 24,  2, SERENITY_FOREST, 3
+	warp_event 25,  2, SERENITY_FOREST, 4
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  6, 11, BGEVENT_READ, RoadA02Sign
-	bg_event 26,  4, BGEVENT_READ, SerenityForestSign
-	bg_event 27,  4, BGEVENT_READ, SerenityForestSign
-	bg_event 35, 19, BGEVENT_READ, RoadA02TrainerTips
-	bg_event 24, 27, BGEVENT_ITEM, RoadA02HiddenAntidote
-	bg_event 13,  8, BGEVENT_ITEM, RoadA02HiddenPokeBall
+	bg_event  6, 13, BGEVENT_READ, RoadA02Sign
+	bg_event 26,  6, BGEVENT_READ, SerenityForestSign
+	bg_event 27,  6, BGEVENT_READ, SerenityForestSign
+	bg_event 35, 21, BGEVENT_READ, RoadA02TrainerTips
+	bg_event 24, 29, BGEVENT_ITEM, RoadA02HiddenAntidote
+	bg_event 13, 10, BGEVENT_ITEM, RoadA02HiddenPokeBall
 
 	def_object_events
-	object_event 26, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerYoungsterJason, -1
-	object_event 22, 4, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherTim, -1
-	object_event 16, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA02YoungsterScript, -1
-	object_event 36, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerLassRamona, -1
-	object_event 19, 14, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA02FruitTree1, -1
-	object_event 20, 14, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA02FruitTree2, -1
+	object_event 26, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerYoungsterJason, -1
+	object_event 22,  6, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherTim, -1
+	object_event 16, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RoadA02YoungsterScript, -1
+	object_event 36, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerLassRamona, -1
+	object_event 19, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA02FruitTree1, -1
+	object_event 20, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RoadA02FruitTree2, -1

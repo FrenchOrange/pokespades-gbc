@@ -123,8 +123,8 @@ ENDM
 	endgroup
 
 	newgroup MAGNOLIA                                             ;  8
-	map_const ROAD_A04,                                    37, 17 ;  1
-	map_const MAGNOLIA_CITY,                               30, 17 ;  2
+	map_const ROAD_A04,                                    38, 18 ;  1
+	map_const MAGNOLIA_CITY,                               29, 17 ;  2
 	map_const MAGNOLIA_MART,                                6,  4 ;  3
 	map_const MAGNOLIA_GYM,                                 7,  9 ;  4
 	map_const TRAINER_SCHOOL,                               6,  6 ;  5
@@ -197,21 +197,21 @@ ENDM
 	newgroup LOTUS                                                ; 14
 	map_const ROUTE_26,                                    10, 54 ;  1
 	map_const ROAD_A00,                                    40,  9 ;  2
-	map_const ROAD_A01,                                    19, 20 ;  3
-	map_const LOTUS_TOWN,                                  15, 12 ;  4
+	map_const ROAD_A01,                                    18, 21 ;  3
+	map_const LOTUS_TOWN,                                  16, 13 ;  4
 	map_const PLAYERS_HOUSE_1F,                             9,  5 ;  5
 	map_const PLAYERS_HOUSE_2F,                             5,  4 ;  6
 	map_const PLAYERS_NEIGHBORS_HOUSE,                      6,  4 ;  7
 	map_const RIVALS_HOUSE,                                14,  5 ;  8
 	map_const ROAD_A01_APRICOT_GATE,                        7,  4 ;  9
-	map_const ROAD_A03,                                    14, 18 ; 10
+	map_const ROAD_A03,                                    14, 23 ; 10
 	map_const CYPRESS_LAB,                                  5,  6 ; 11
 	map_const VICTORY_ROAD_GATE,                            3,  9 ; 12
 	endgroup
 
 	newgroup APRICOT                                              ; 15
-	map_const ROAD_A02,                                    21, 15 ;  1
-	map_const APRICOT_TOWN,                                18, 12 ;  2
+	map_const ROAD_A02,                                    22, 17 ;  1
+	map_const APRICOT_TOWN,                                19, 13 ;  2
 	map_const APRICOT_MART,                                 6,  4 ;  3
 	map_const APRICOT_POKECENTER_1F,                        9,  5 ;  4
 	map_const APRICOT_PIKACHU_SPEECH_HOUSE,                 6,  4 ;  5

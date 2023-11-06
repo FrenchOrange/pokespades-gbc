@@ -360,29 +360,29 @@ LotusTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 19,  9, RIVALS_HOUSE, 1
-	warp_event  7, 19, PLAYERS_HOUSE_1F, 1
-	warp_event  7,  9, PLAYERS_NEIGHBORS_HOUSE, 1
+	warp_event 21,  9, RIVALS_HOUSE, 1
+	warp_event  9, 19, PLAYERS_HOUSE_1F, 1
+	warp_event  9,  9, PLAYERS_NEIGHBORS_HOUSE, 1
 
 	def_coord_events
-	coord_event 12,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene1
-	coord_event 13,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene2
-	coord_event 14,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene3
-	coord_event 15,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene4
-	coord_event 12,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye1
-	coord_event 13,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye2
-	coord_event 14,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye3
-	coord_event 15,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye4
+	coord_event 14,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene1
+	coord_event 15,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene2
+	coord_event 16,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene3
+	coord_event 17,  0, SCENE_LOTUSTOWN_SUPER_NERD_STOPS_YOU, LotusTownSuperNerdStopsYouScene4
+	coord_event 14,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye1
+	coord_event 15,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye2
+	coord_event 16,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye3
+	coord_event 17,  5, SCENE_LOTUSTOWN_MOM_SAYS_GOODBYE, LotusTownMomSaysGoodbye4
 
 	def_bg_events
-	bg_event 18, 13, BGEVENT_READ, LotusTownSign
-	bg_event  5, 19, BGEVENT_READ, LotusTownPlayersHomeSign
-	bg_event 17,  9, BGEVENT_READ, LotusTownRivalsHomeSign
+	bg_event 20, 13, BGEVENT_READ, LotusTownSign
+	bg_event  7, 19, BGEVENT_READ, LotusTownPlayersHomeSign
+	bg_event 19,  9, BGEVENT_READ, LotusTownRivalsHomeSign
 
 	def_object_events
-	object_event  3, 13, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LotusTownPigtailsScript, -1
-	object_event 19, 17, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LotusTownFisherScript, -1
-	object_event  2, 13, SPRITE_LITTLE_BOY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LotusTownLittleBoyScript, -1
-	object_event 15, 13, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LotusTownGameboyKidScript, -1
-	object_event 14, -3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LOTUS_TOWN_SUPER_NERD
-	object_event  0, 0, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LOTUS_TOWN_MOM
+	object_event  5, 13, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LotusTownPigtailsScript, -1
+	object_event 21, 17, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LotusTownFisherScript, -1
+	object_event  4, 13, SPRITE_LITTLE_BOY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LotusTownLittleBoyScript, -1
+	object_event 17, 13, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LotusTownGameboyKidScript, -1
+	object_event 16, -3, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LOTUS_TOWN_SUPER_NERD
+	object_event  2,  0, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LOTUS_TOWN_MOM
