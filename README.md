@@ -11,7 +11,7 @@ The current version is the demo proper, going up to the first badge. A list of k
 Some HUGE thanks to:
 * All the amazing people who worked tirelessly on the different Pokémon disassemblies.
 * The awesome folks who wrote down the various tutorials for Pokecrystal.
-* Artist [LuigiTKO](https://twitter.com/LuigiTKO) for his gorgeous GSC-styled Pokémon icons.
+* Artists [LuigiTKO](https://twitter.com/LuigiTKO) and [GuiAbel](https://twitter.com/guiabel/) for their gorgeous GSC-styled Pokémon icons.
 * The artists from Pokémon Showdown and Pokémon Crystal Clear for a few Pokémon icons.
 * Pokémon Coral for the lamppost base, and Red++ V4 for the gate house and gym sign tiles.
 * Nekroba DA for helping out with the new tree tiles, which are based on the ones from his hack, [Pokémon Crystal Cross](https://github.com/NekrobaDA/Pokemon_Crystal_Cross).
